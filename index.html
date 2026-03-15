@@ -142,38 +142,11 @@
                 </div>
                 
                 <!-- Hero Visual -->
-                <div class="relative">
-                    <div class="bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10">
-                        <div class="grid grid-cols-2 gap-4">
-                            <div class="space-y-4">
-                                <div class="bg-brand-orange/20 rounded-2xl p-6 border border-brand-orange/30">
-                                    <i data-lucide="ship" class="w-10 h-10 text-brand-orange mb-3"></i>
-                                    <div class="text-white font-semibold">Transport Maritime</div>
-                                    <div class="text-slate-400 text-sm">Conteneurs & Fret</div>
-                                </div>
-                                <div class="bg-blue-500/20 rounded-2xl p-6 border border-blue-500/30">
-                                    <i data-lucide="plane" class="w-10 h-10 text-blue-400 mb-3"></i>
-                                    <div class="text-white font-semibold">Transport Aérien</div>
-                                    <div class="text-slate-400 text-sm">Express & Urgent</div>
-                                </div>
-                            </div>
-                            <div class="space-y-4 pt-8">
-                                <div class="bg-emerald-500/20 rounded-2xl p-6 border border-emerald-500/30">
-                                    <i data-lucide="shopping-cart" class="w-10 h-10 text-emerald-400 mb-3"></i>
-                                    <div class="text-white font-semibold">Facilitation Achat</div>
-                                    <div class="text-slate-400 text-sm">Sourcing Global</div>
-                                </div>
-                                <div class="bg-purple-500/20 rounded-2xl p-6 border border-purple-500/30">
-                                    <i data-lucide="handshake" class="w-10 h-10 text-purple-400 mb-3"></i>
-                                    <div class="text-white font-semibold">Négociation</div>
-                                    <div class="text-slate-400 text-sm">Conseil & Contrats</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="relative h-full min-h-[400px] lg:min-h-[500px]">
+                    <img src="assets/hero_logistics.png" alt="Logistics Port" class="absolute inset-0 w-full h-full object-cover rounded-3xl shadow-2xl border-4 border-white/10">
                     
                     <!-- Floating Badge -->
-                    <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl p-4 shadow-2xl">
+                    <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl p-4 shadow-2xl z-20">
                         <div class="flex items-center space-x-3">
                             <div class="w-12 h-12 bg-brand-orange/10 rounded-xl flex items-center justify-center">
                                 <i data-lucide="trending-down" class="w-6 h-6 text-brand-orange"></i>
@@ -316,31 +289,8 @@
                             Devis Matériel Construction
                         </button>
                     </div>
-                    <div class="relative">
-                        <div class="bg-gradient-to-br from-orange-100 to-orange-50 rounded-2xl p-8">
-                            <div class="grid grid-cols-2 gap-4">
-                                <div class="bg-white rounded-xl p-4 shadow-md">
-                                    <i data-lucide="hammer" class="w-8 h-8 text-brand-orange mb-2"></i>
-                                    <div class="font-semibold text-brand-dark">Machines</div>
-                                    <div class="text-sm text-slate-500">CNC, Presses</div>
-                                </div>
-                                <div class="bg-white rounded-xl p-4 shadow-md">
-                                    <i data-lucide="building-2" class="w-8 h-8 text-brand-orange mb-2"></i>
-                                    <div class="font-semibold text-brand-dark">Matériaux</div>
-                                    <div class="text-sm text-slate-500">Ciment, Acier</div>
-                                </div>
-                                <div class="bg-white rounded-xl p-4 shadow-md">
-                                    <i data-lucide="hard-hat" class="w-8 h-8 text-brand-orange mb-2"></i>
-                                    <div class="font-semibold text-brand-dark">Sécurité</div>
-                                    <div class="text-sm text-slate-500">EPI, Signalisation</div>
-                                </div>
-                                <div class="bg-white rounded-xl p-4 shadow-md">
-                                    <i data-lucide="truck" class="w-8 h-8 text-brand-orange mb-2"></i>
-                                    <div class="font-semibold text-brand-dark">Logistique</div>
-                                    <div class="text-sm text-slate-500">Transport lourd</div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="relative h-full min-h-[400px]">
+                        <img src="assets/construction_machinery.png" alt="Construction Equipment" class="absolute inset-0 w-full h-full object-cover rounded-3xl shadow-2xl">
                     </div>
                 </div>
             </div>
@@ -460,37 +410,23 @@
                         Devis Transport Aérien
                     </button>
                 </div>
-                <div class="bg-gradient-to-br from-orange-50 to-orange-100 rounded-3xl p-8">
-                    <div class="bg-white rounded-2xl p-6 shadow-lg">
-                        <div class="flex items-center justify-between mb-6">
-                            <div class="flex items-center space-x-3">
-                                <div class="w-12 h-12 bg-brand-orange/10 rounded-xl flex items-center justify-center">
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl group h-full min-h-[400px]">
+                    <img src="assets/air_freight.png" alt="Air Freight" class="w-full h-full object-cover absolute inset-0 transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                    <div class="relative z-10 p-8 h-full flex flex-col justify-end">
+                        <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 text-white shadow-xl">
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex items-center space-x-3">
                                     <i data-lucide="plane" class="w-6 h-6 text-brand-orange"></i>
+                                    <div class="font-bold text-xl">Air Freight</div>
                                 </div>
-                                <div>
-                                    <div class="font-bold text-brand-dark">Air Freight</div>
-                                    <div class="text-sm text-slate-500">Express International</div>
-                                </div>
+                                <span class="bg-brand-orange text-white px-3 py-1 rounded-full text-sm font-semibold">2-7 jours</span>
                             </div>
-                            <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">2-7 jours</span>
-                        </div>
-                        
-                        <div class="space-y-4">
-                            <div class="flex justify-between items-center py-3 border-b border-slate-100">
-                                <span class="text-slate-600">Idéal pour</span>
-                                <span class="font-medium text-brand-dark">Urgent / Haute Valeur</span>
-                            </div>
-                            <div class="flex justify-between items-center py-3 border-b border-slate-100">
-                                <span class="text-slate-600">Capacité</span>
-                                <span class="font-medium text-brand-dark">Petits volumes</span>
-                            </div>
-                            <div class="flex justify-between items-center py-3 border-b border-slate-100">
-                                <span class="text-slate-600">Coût</span>
-                                <span class="font-medium text-brand-dark">Premium</span>
-                            </div>
-                            <div class="flex justify-between items-center py-3">
-                                <span class="text-slate-600">Suivi</span>
-                                <span class="font-medium text-brand-dark">Temps réel</span>
+                            <div class="space-y-2 text-sm text-white/90">
+                                <div class="flex justify-between border-b border-white/20 pb-2"><span>Idéal pour</span> <span class="font-medium">Urgent / Haute Valeur</span></div>
+                                <div class="flex justify-between border-b border-white/20 pb-2"><span>Capacité</span> <span class="font-medium">Petits volumes</span></div>
+                                <div class="flex justify-between border-b border-white/20 pb-2"><span>Coût</span> <span class="font-medium">Premium</span></div>
+                                <div class="flex justify-between"><span>Suivi</span> <span class="font-medium">Temps réel</span></div>
                             </div>
                         </div>
                     </div>
@@ -540,37 +476,23 @@
                         Devis Transport Maritime
                     </button>
                 </div>
-                <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8">
-                    <div class="bg-white rounded-2xl p-6 shadow-lg">
-                        <div class="flex items-center justify-between mb-6">
-                            <div class="flex items-center space-x-3">
-                                <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center">
-                                    <i data-lucide="ship" class="w-6 h-6 text-blue-600"></i>
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl group h-full min-h-[400px]">
+                    <img src="assets/sea_freight.png" alt="Sea Freight" class="w-full h-full object-cover absolute inset-0 transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                    <div class="relative z-10 p-8 h-full flex flex-col justify-end">
+                        <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 text-white shadow-xl">
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex items-center space-x-3">
+                                    <i data-lucide="ship" class="w-6 h-6 text-blue-400"></i>
+                                    <div class="font-bold text-xl">Sea Freight</div>
                                 </div>
-                                <div>
-                                    <div class="font-bold text-brand-dark">Sea Freight</div>
-                                    <div class="text-sm text-slate-500">FCL / LCL / RoRo</div>
-                                </div>
+                                <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">15-45 jours</span>
                             </div>
-                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold">15-45 jours</span>
-                        </div>
-                        
-                        <div class="space-y-4">
-                            <div class="flex justify-between items-center py-3 border-b border-slate-100">
-                                <span class="text-slate-600">Idéal pour</span>
-                                <span class="font-medium text-brand-dark">Volumineux / Lourd</span>
-                            </div>
-                            <div class="flex justify-between items-center py-3 border-b border-slate-100">
-                                <span class="text-slate-600">Capacité</span>
-                                <span class="font-medium text-brand-dark">Illimitée</span>
-                            </div>
-                            <div class="flex justify-between items-center py-3 border-b border-slate-100">
-                                <span class="text-slate-600">Coût</span>
-                                <span class="font-medium text-brand-dark">Économique</span>
-                            </div>
-                            <div class="flex justify-between items-center py-3">
-                                <span class="text-slate-600">Suivi</span>
-                                <span class="font-medium text-brand-dark">Par étapes</span>
+                            <div class="space-y-2 text-sm text-white/90">
+                                <div class="flex justify-between border-b border-white/20 pb-2"><span>Idéal pour</span> <span class="font-medium">Volumineux / Lourd</span></div>
+                                <div class="flex justify-between border-b border-white/20 pb-2"><span>Capacité</span> <span class="font-medium">Illimitée</span></div>
+                                <div class="flex justify-between border-b border-white/20 pb-2"><span>Coût</span> <span class="font-medium">Économique</span></div>
+                                <div class="flex justify-between"><span>Suivi</span> <span class="font-medium">Par étapes</span></div>
                             </div>
                         </div>
                     </div>
