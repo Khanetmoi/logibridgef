@@ -133,7 +133,28 @@ const translations = {
         foot_rights: "© 2024 Logibridge International. All rights reserved.",
         foot_legal: "Legal Notice",
         foot_privacy: "Privacy Policy",
-        foot_admin: "Admin"
+        foot_admin: "Admin",
+        
+        modal_quote_title: "Request a Quote",
+        modal_quote_desc: "Fill out the form below",
+        modal_sector_label: "Business Sector *",
+        modal_sector_opt_default: "Select a sector",
+        modal_sector_opt_other: "Other",
+        modal_service_label: "Service Type *",
+        modal_name_label: "Full Name *",
+        modal_name_placeholder: "Your Name",
+        modal_company_label: "Company",
+        modal_company_placeholder: "Company Name",
+        modal_email_label: "Email *",
+        modal_phone_label: "Phone *",
+        modal_desc_label: "Project Description *",
+        modal_desc_placeholder: "Describe your specific needs, required products, quantities, timelines...",
+        modal_budget_label: "Estimated Budget (optional)",
+        modal_budget_opt_default: "Select a range",
+        modal_submit: "Send my request",
+        
+        toast_title: "Request sent!",
+        toast_desc: "We will contact you within 24h."
     },
     fr: {
         nav_services: "Services",
@@ -269,7 +290,28 @@ const translations = {
         foot_rights: "© 2024 Logibridge International. Tous droits réservés.",
         foot_legal: "Mentions Légales",
         foot_privacy: "Politique de Confidentialité",
-        foot_admin: "Admin"
+        foot_admin: "Admin",
+        
+        modal_quote_title: "Demander un Devis",
+        modal_quote_desc: "Remplissez le formulaire ci-dessous",
+        modal_sector_label: "Secteur d'activité *",
+        modal_sector_opt_default: "Sélectionnez un secteur",
+        modal_sector_opt_other: "Autre",
+        modal_service_label: "Type de service *",
+        modal_name_label: "Nom complet *",
+        modal_name_placeholder: "Votre nom",
+        modal_company_label: "Entreprise",
+        modal_company_placeholder: "Nom de l'entreprise",
+        modal_email_label: "Email *",
+        modal_phone_label: "Téléphone *",
+        modal_desc_label: "Description du projet *",
+        modal_desc_placeholder: "Décrivez vos besoins spécifiques, les produits recherchés, les quantités, les délais...",
+        modal_budget_label: "Budget estimé (optionnel)",
+        modal_budget_opt_default: "Sélectionnez une fourchette",
+        modal_submit: "Envoyer ma demande",
+        
+        toast_title: "Demande envoyée !",
+        toast_desc: "Nous vous contacterons sous 24h."
     }
 };
 
@@ -304,10 +346,6 @@ function changeLanguage(lang) {
     elements.forEach(element => {
         const key = element.getAttribute('data-i18n');
         if (translations[lang] && translations[lang][key]) {
-            // Need to carefully update text without breaking child elements (like icons)
-            // It's safer to use a span inside elements if they contain icons.
-            // But for simple texts, innerText/innerHTML is fine.
-            // If the element has child nodes (like an icon), we only replace text nodes that aren't empty
             const hasIcon = element.querySelector('i');
             if(hasIcon) {
                 // Find purely text nodes
@@ -324,12 +362,17 @@ function changeLanguage(lang) {
         }
     });
     
-    // Special handling for HTML strings like "Your Bridge To <span class='gradient-text'>The World</span>"
-    // is already handled by splitting keys up in the data-i18n logic.
+    // Update placeholders
+    const placeholders = document.querySelectorAll('[data-i18n-placeholder]');
+    placeholders.forEach(el => {
+        const key = el.getAttribute('data-i18n-placeholder');
+        if (translations[lang] && translations[lang][key]) {
+            el.placeholder = translations[lang][key];
+        }
+    });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Default to English unless French is saved
     const savedLang = localStorage.getItem('logibridge_lang') || 'en';
     changeLanguage(savedLang);
 });
