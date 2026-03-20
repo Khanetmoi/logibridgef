@@ -63,6 +63,7 @@
                     <a href="#negoce-detail" class="text-slate-600 hover:text-brand-orange font-medium transition" data-i18n="nav_trading">Trading</a>
                     <a href="#logistique" class="text-slate-600 hover:text-brand-orange font-medium transition" data-i18n="nav_logistics">Logistics</a>
                     <a href="#processus" class="text-slate-600 hover:text-brand-orange font-medium transition" data-i18n="nav_process">Process</a>
+                    <a href="#testimonials" class="text-slate-600 hover:text-brand-orange font-medium transition" data-i18n="nav_testimonials">Testimonials</a>
                     <button onclick="openQuoteModal()" class="bg-brand-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition shadow-lg shadow-orange-500/30" data-i18n="nav_quote">
                         Request a Quote
                     </button>
@@ -97,6 +98,7 @@
                 <a href="#negoce-detail" class="block py-2 text-slate-600 font-medium" data-i18n="nav_trading">Trading</a>
                 <a href="#logistique" class="block py-2 text-slate-600 font-medium" data-i18n="nav_logistics">Logistics</a>
                 <a href="#processus" class="block py-2 text-slate-600 font-medium" data-i18n="nav_process">Process</a>
+                <a href="#testimonials" class="block py-2 text-slate-600 font-medium" data-i18n="nav_testimonials">Testimonials</a>
                 <button onclick="openQuoteModal()" class="w-full bg-brand-orange text-white py-3 rounded-lg font-semibold mt-4" data-i18n="nav_quote">
                     Request a Quote
                 </button>
@@ -186,54 +188,80 @@
                 <h2 class="text-3xl lg:text-4xl font-bold text-brand-dark mt-3 mb-4" data-i18n="mission_title">
                     Mission, Vision & Values
                 </h2>
-                <p class="text-slate-600 text-lg" data-i18n="mission_desc">
+                <p class="text-slate-600 text-lg hidden" data-i18n="mission_desc">
                     Logibridge is built on strong foundations to deliver excellence across borders.
                 </p>
             </div>
             
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid lg:grid-cols-2 gap-8 mb-12">
                 <!-- Mission -->
-                <div class="bg-white rounded-2xl p-8 shadow-xl border border-slate-200 text-center card-hover">
-                    <div class="w-16 h-16 bg-slate-200 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <div class="bg-white rounded-3xl p-8 lg:p-10 shadow-xl border border-slate-200 card-hover">
+                    <div class="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mb-6">
                         <i data-lucide="target" class="w-8 h-8 text-brand-dark"></i>
                     </div>
                     <h3 class="text-2xl font-bold text-brand-dark mb-4" data-i18n="mission_card_title">Our Mission</h3>
-                    <p class="text-slate-600" data-i18n="mission_card_desc">
+                    <p class="text-slate-600 leading-relaxed text-justify" data-i18n="mission_card_desc">
                         To simplify and secure international trade by providing tailored sourcing, negotiation, and logistics solutions for businesses worldwide.
                     </p>
                 </div>
                 
                 <!-- Vision -->
-                <div class="bg-white rounded-2xl p-8 shadow-xl border border-slate-200 text-center card-hover">
-                    <div class="w-16 h-16 bg-brand-orange/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <div class="bg-white rounded-3xl p-8 lg:p-10 shadow-xl border border-slate-200 card-hover">
+                    <div class="w-16 h-16 bg-brand-orange/10 rounded-2xl flex items-center justify-center mb-6">
                         <i data-lucide="eye" class="w-8 h-8 text-brand-orange"></i>
                     </div>
                     <h3 class="text-2xl font-bold text-brand-dark mb-4" data-i18n="vision_card_title">Our Vision</h3>
-                    <p class="text-slate-600" data-i18n="vision_card_desc">
+                    <p class="text-slate-600 leading-relaxed text-justify" data-i18n="vision_card_desc">
                         To become the leading bridge connecting African markets with global opportunities through Dubai and China.
                     </p>
                 </div>
-                
-                <!-- Values -->
-                <div class="bg-white rounded-2xl p-8 shadow-xl border border-slate-200 text-center card-hover">
-                    <div class="w-16 h-16 bg-slate-200 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            </div>
+            
+            <!-- Values -->
+            <div class="bg-white rounded-3xl p-8 lg:p-12 shadow-xl border border-slate-200">
+                <div class="text-center mb-10">
+                    <div class="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
                         <i data-lucide="heart" class="w-8 h-8 text-brand-dark"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-brand-dark mb-4" data-i18n="values_card_title">Our Values</h3>
-                    <ul class="text-slate-600 space-y-3 text-left max-w-[200px] mx-auto">
-                        <li class="flex items-center space-x-2">
-                            <i data-lucide="check" class="w-5 h-5 text-brand-orange"></i>
-                            <span data-i18n="values_list_1">Integrity & Transparency</span>
-                        </li>
-                        <li class="flex items-center space-x-2">
-                            <i data-lucide="check" class="w-5 h-5 text-brand-orange"></i>
-                            <span data-i18n="values_list_2">Excellence & Reliability</span>
-                        </li>
-                        <li class="flex items-center space-x-2">
-                            <i data-lucide="check" class="w-5 h-5 text-brand-orange"></i>
-                            <span data-i18n="values_list_3">Innovation & Adaptability</span>
-                        </li>
-                    </ul>
+                    <h3 class="text-3xl font-bold text-brand-dark" data-i18n="values_card_title">Our Values</h3>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="space-y-3">
+                        <h4 class="text-lg font-bold text-brand-dark flex items-center">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-brand-orange mr-2"></i> 
+                            <span data-i18n="val_1_title">Transparency</span>
+                        </h4>
+                        <p class="text-slate-600 text-sm leading-relaxed text-left" data-i18n="val_1_desc">...</p>
+                    </div>
+                    <div class="space-y-3">
+                        <h4 class="text-lg font-bold text-brand-dark flex items-center">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-brand-orange mr-2"></i> 
+                            <span data-i18n="val_2_title">Innovation</span>
+                        </h4>
+                        <p class="text-slate-600 text-sm leading-relaxed text-left" data-i18n="val_2_desc">...</p>
+                    </div>
+                    <div class="space-y-3">
+                        <h4 class="text-lg font-bold text-brand-dark flex items-center">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-brand-orange mr-2"></i> 
+                            <span data-i18n="val_3_title">Commitment to Africa</span>
+                        </h4>
+                        <p class="text-slate-600 text-sm leading-relaxed text-left" data-i18n="val_3_desc">...</p>
+                    </div>
+                    <div class="space-y-3">
+                        <h4 class="text-lg font-bold text-brand-dark flex items-center">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-brand-orange mr-2"></i> 
+                            <span data-i18n="val_4_title">Reliability</span>
+                        </h4>
+                        <p class="text-slate-600 text-sm leading-relaxed text-left" data-i18n="val_4_desc">...</p>
+                    </div>
+                    <div class="space-y-3 lg:col-span-2 md:col-span-2 lg:col-start-2">
+                        <h4 class="text-lg font-bold text-brand-dark flex items-center">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-brand-orange mr-2"></i> 
+                            <span data-i18n="val_5_title">Responsibility</span>
+                        </h4>
+                        <p class="text-slate-600 text-sm leading-relaxed text-left" data-i18n="val_5_desc">...</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -705,6 +733,89 @@
                         <p class="text-slate-400 text-sm" data-i18n="proc_4_desc">
                             Final reception, quality control, and post-delivery support.
                         </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-orange font-semibold text-sm uppercase tracking-wider" data-i18n="testi_badge">Testimonials</span>
+                <h2 class="text-3xl lg:text-4xl font-bold text-brand-dark mt-3 mb-4" data-i18n="testi_title">
+                    What Our Clients Say
+                </h2>
+                <p class="text-slate-600 text-lg" data-i18n="testi_desc">
+                    Discover why businesses trust us for their international trade and logistics needs.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-slate-200 relative">
+                    <i data-lucide="quote" class="w-10 h-10 text-brand-orange/20 absolute top-6 right-6"></i>
+                    <div class="flex items-center space-x-1 mb-6 text-brand-orange">
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6 italic" data-i18n="testi_1_text">
+                        "Logibridge has completely transformed our supply chain. Their team secured high-quality construction materials at incredible rates from China, and the delivery was seamless."
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center font-bold text-brand-dark">A</div>
+                        <div>
+                            <h4 class="font-bold text-brand-dark" data-i18n="testi_1_name">Amadou D.</h4>
+                            <p class="text-sm text-slate-500" data-i18n="testi_1_role">Construction Manager</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-slate-200 relative">
+                    <i data-lucide="quote" class="w-10 h-10 text-brand-orange/20 absolute top-6 right-6"></i>
+                    <div class="flex items-center space-x-1 mb-6 text-brand-orange">
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6 italic" data-i18n="testi_2_text">
+                        "The transparency and reliability of Logibridge are unmatched. They handled our automotive imports from Dubai to West Africa with utmost professionalism."
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center font-bold text-brand-dark">S</div>
+                        <div>
+                            <h4 class="font-bold text-brand-dark" data-i18n="testi_2_name">Sarah K.</h4>
+                            <p class="text-sm text-slate-500" data-i18n="testi_2_role">Automobile Dealership Owner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-slate-200 relative">
+                    <i data-lucide="quote" class="w-10 h-10 text-brand-orange/20 absolute top-6 right-6"></i>
+                    <div class="flex items-center space-x-1 mb-6 text-brand-orange">
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6 italic" data-i18n="testi_3_text">
+                        "If you need a trustworthy partner for international trade, Logibridge is the right choice. Their market intelligence helped us save a lot on our IT procurement."
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center font-bold text-brand-dark">M</div>
+                        <div>
+                            <h4 class="font-bold text-brand-dark" data-i18n="testi_3_name">Marc T.</h4>
+                            <p class="text-sm text-slate-500" data-i18n="testi_3_role">IT Solutions Director</p>
+                        </div>
                     </div>
                 </div>
             </div>
