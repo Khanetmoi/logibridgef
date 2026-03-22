@@ -75,34 +75,43 @@ document.getElementById('quoteForm').addEventListener('submit', async function(e
     submitBtn.innerHTML = '<div class="loader"></div>';
     submitBtn.disabled = true;
     
-    // Get form data
-    const formData = {
-        sector: document.getElementById('sector').value,
-        serviceType: document.querySelector('input[name="serviceType"]:checked')?.value,
-        fullName: document.getElementById('fullName').value,
-        company: document.getElementById('company').value,
-        email: document.getElementById('email').value,
-        phone: document.getElementById('phone').value,
-        projectDetails: document.getElementById('projectDetails').value,
-        budget: document.getElementById('budget').value,
-        timestamp: new Date().toISOString(),
-        status: 'new'
-    };
+    const form = e.target;
+    // Get form data using FormData (best for Formspree)
+    const formData = new FormData(form);
+    
+    // Append subject
+    formData.append('_subject', "Nouveau devis Logibridge");
     
     try {
-        // Save to Firebase
-        await db.collection('quotes').add(formData);
+        const response = await fetch('https://formspree.io/f/mqeyvegk', {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
         
-        // Show success
-        showToast();
-        
-        // Reset form and close modal
-        document.getElementById('quoteForm').reset();
-        closeQuoteModal();
+        if (response.ok) {
+            // Show success
+            showToast();
+            
+            // Reset form and close modal
+            form.reset();
+            closeQuoteModal();
+        } else {
+            let errorMsg = 'Erreur lors de l\'envoi du formulaire';
+            try {
+                const errorData = await response.json();
+                if (errorData.errors && errorData.errors.length > 0) {
+                    errorMsg = errorData.errors[0].message;
+                }
+            } catch (err) {}
+            throw new Error(errorMsg);
+        }
         
     } catch (error) {
         console.error('Error saving quote:', error);
-        alert('Une erreur est survenue. Veuillez réessayer ou nous contacter par téléphone.');
+        alert('Une erreur est survenue: ' + error.message + '. Veuillez réessayer ou nous contacter par téléphone.');
     } finally {
         submitBtn.innerHTML = originalContent;
         submitBtn.disabled = false;
@@ -126,5 +135,50 @@ window.addEventListener('scroll', function() {
         nav.classList.add('shadow-lg');
     } else {
         nav.classList.remove('shadow-lg');
+    }
+});
+
+// Smart Call Feature Pre-Fetch
+// We pre-fetch the IP to avoid popup blockers and async delay when the user clicks.
+let userCountryCode = null;
+
+fetch('https://ipapi.co/json/')
+    .then(r => r.json())
+    .then(data => {
+        if (data && data.country_code) {
+            userCountryCode = data.country_code;
+        }
+    })
+    .catch(err => console.error('Location pre-fetch failed:', err));
+
+function handleSmartCall() {
+    if (userCountryCode === 'AE') { // UAE
+        window.location.href = 'tel:+971528064643';
+    } else if (userCountryCode === 'CM') { // Cameroon
+        window.location.href = 'tel:+237657763839';
+    } else {
+        // Fallback options
+        const modal = document.getElementById('contactOptionsModal');
+        if (modal) {
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        } else {
+            window.location.href = 'https://wa.me/971528064643';
+        }
+    }
+}
+
+function closeContactOptionsModal() {
+    const modal = document.getElementById('contactOptionsModal');
+    if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+}
+
+// Close contact modal on outside click
+document.getElementById('contactOptionsModal')?.addEventListener('click', function(e) {
+    if (e.target === this) {
+        closeContactOptionsModal();
     }
 });

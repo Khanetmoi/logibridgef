@@ -136,6 +136,9 @@ const translations = {
         cta_btn_1: "Request a Free Quote",
         cta_btn_2: "Call Us",
         
+        modal_contact_title: "Contact Options",
+        modal_contact_desc: "We couldn't detect a local number for your region. Please connect with us via WhatsApp or our social channels:",
+        
         foot_desc: "Your trusted partner for purchase facilitation and international logistics across Dubai, China, and Africa.",
         foot_services: "Services",
         foot_s1: "Purchase Facilitation",
@@ -313,6 +316,9 @@ const translations = {
         cta_desc: "Discutons de vos projets d'importation et trouvons ensemble les solutions les plus adaptées.",
         cta_btn_1: "Demander un Devis Gratuit",
         cta_btn_2: "Nous Appeler",
+        
+        modal_contact_title: "Options de Contact",
+        modal_contact_desc: "Nous n'avons pas pu détecter un numéro local pour votre région. Veuillez nous contacter via WhatsApp ou sur nos réseaux sociaux :",
         
         foot_desc: "Votre partenaire de confiance pour la facilitation d'achat et la logistique internationale à Dubaï, en Chine et en Afrique.",
         foot_services: "Services",
