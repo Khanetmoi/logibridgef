@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logibridge International | Votre Pont Vers l'International</title>
-    <meta name="description" content="Logibridge International - Votre partenaire stratégique pour la facilitation d'achat, le négoce international et la logistique. Sourcing, négociation et transport maritime/aérien depuis Dubaï, la Chine vers l'Afrique.">
-    <meta name="keywords" content="logistique internationale, transport maritime, fret aérien, négoce international, sourcing, importation Afrique, Dubaï, Chine, Cameroun, Logibridge">
+    <meta name="description"
+        content="Logibridge International - Votre partenaire stratégique pour la facilitation d'achat, le négoce international et la logistique. Sourcing, négociation et transport maritime/aérien depuis Dubaï, la Chine vers l'Afrique.">
+    <meta name="keywords"
+        content="logistique internationale, transport maritime, fret aérien, négoce international, sourcing, importation Afrique, Dubaï, Chine, Cameroun, Logibridge">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    
+
     <!-- Open Graph / Social Meta Tags -->
     <meta property="og:title" content="Logibridge International">
-    <meta property="og:description" content="Découvrez une solution logistique et commerciale intégrée, reliant vos entreprises aux marchés de Dubaï et de la Chine avec transparence et fiabilité.">
+    <meta property="og:description"
+        content="Découvrez une solution logistique et commerciale intégrée, reliant vos entreprises aux marchés de Dubaï et de la Chine avec transparence et fiabilité.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://logibridge.com/">
     <meta property="og:image" content="assets/logo1.png">
@@ -19,26 +23,39 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Logibridge International">
-    <meta name="twitter:description" content="Solutions complètes de facilitation d'achat, de logistique et de négoce international entre l'Afrique, Dubaï et la Chine.">
+    <meta name="twitter:description"
+        content="Solutions complètes de facilitation d'achat, de logistique et de négoce international entre l'Afrique, Dubaï et la Chine.">
     <meta name="twitter:image" content="assets/logo1.png">
+
+    <!-- Developer Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Myriad Evo",
+      "url": "https://github.com/Khanetmoi",
+      "role": "Web Designer"
+    }
+    </script>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/logo.png">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    
+
     <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
-    
+
     <script>
         tailwind.config = {
             theme: {
@@ -58,12 +75,13 @@
             }
         }
     </script>
-    
+
     <link rel="stylesheet" href="css/style.css">
     <script src="js/translations.js"></script>
 </head>
+
 <body class="font-sans text-slate-800 bg-slate-50">
-    
+
     <!-- Navigation -->
     <nav class="fixed w-full bg-white/95 backdrop-blur-md border-b border-slate-200 z-40">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -74,33 +92,45 @@
                         <img src="assets/logo.png" alt="Logibridge Logo" class="h-6 sm:h-8 md:h-10 w-auto">
                     </div>
                 </div>
-                
+
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#services" class="text-slate-600 hover:text-brand-orange font-medium transition" data-i18n="nav_services">Services</a>
-                    <a href="#secteurs" class="text-slate-600 hover:text-brand-orange font-medium transition" data-i18n="nav_sectors">Sectors</a>
-                    <a href="#negoce-detail" class="text-slate-600 hover:text-brand-orange font-medium transition" data-i18n="nav_trading">Trading</a>
-                    <a href="#logistique" class="text-slate-600 hover:text-brand-orange font-medium transition" data-i18n="nav_logistics">Logistics</a>
-                    <a href="#processus" class="text-slate-600 hover:text-brand-orange font-medium transition" data-i18n="nav_process">Process</a>
-                    <a href="#testimonials" class="text-slate-600 hover:text-brand-orange font-medium transition" data-i18n="nav_testimonials">Testimonials</a>
-                    <button onclick="openQuoteModal()" class="bg-brand-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition shadow-lg shadow-orange-500/30" data-i18n="nav_quote">
+                    <a href="#services" class="text-slate-600 hover:text-brand-orange font-medium transition"
+                        data-i18n="nav_services">Services</a>
+                    <a href="#secteurs" class="text-slate-600 hover:text-brand-orange font-medium transition"
+                        data-i18n="nav_sectors">Sectors</a>
+                    <a href="#negoce-detail" class="text-slate-600 hover:text-brand-orange font-medium transition"
+                        data-i18n="nav_trading">Trading</a>
+                    <a href="#logistique" class="text-slate-600 hover:text-brand-orange font-medium transition"
+                        data-i18n="nav_logistics">Logistics</a>
+                    <a href="#processus" class="text-slate-600 hover:text-brand-orange font-medium transition"
+                        data-i18n="nav_process">Process</a>
+                    <a href="#testimonials" class="text-slate-600 hover:text-brand-orange font-medium transition"
+                        data-i18n="nav_testimonials">Testimonials</a>
+                    <button onclick="openQuoteModal()"
+                        class="bg-brand-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition shadow-lg shadow-orange-500/30"
+                        data-i18n="nav_quote">
                         Request a Quote
                     </button>
                     <!-- Language Toggle -->
                     <div class="flex items-center space-x-2 border-l border-slate-300 pl-4">
-                        <button onclick="changeLanguage('en')" id="lang-en" class="text-brand-orange font-bold text-sm transition">EN</button>
+                        <button onclick="changeLanguage('en')" id="lang-en"
+                            class="text-brand-orange font-bold text-sm transition">EN</button>
                         <span class="text-slate-300">/</span>
-                        <button onclick="changeLanguage('fr')" id="lang-fr" class="text-slate-400 hover:text-brand-orange font-medium text-sm transition">FR</button>
+                        <button onclick="changeLanguage('fr')" id="lang-fr"
+                            class="text-slate-400 hover:text-brand-orange font-medium text-sm transition">FR</button>
                     </div>
                 </div>
-                
+
                 <!-- Mobile Menu Button -->
                 <div class="md:hidden flex items-center space-x-4">
                     <!-- Language Toggle Mobile -->
                     <div class="flex items-center space-x-2">
-                        <button onclick="changeLanguage('en')" id="lang-en-mobile" class="text-brand-orange font-bold text-sm">EN</button>
+                        <button onclick="changeLanguage('en')" id="lang-en-mobile"
+                            class="text-brand-orange font-bold text-sm">EN</button>
                         <span class="text-slate-300">/</span>
-                        <button onclick="changeLanguage('fr')" id="lang-fr-mobile" class="text-slate-400 font-medium text-sm">FR</button>
+                        <button onclick="changeLanguage('fr')" id="lang-fr-mobile"
+                            class="text-slate-400 font-medium text-sm">FR</button>
                     </div>
                     <button class="p-2" onclick="toggleMobileMenu()">
                         <i data-lucide="menu" class="w-6 h-6 text-brand-dark"></i>
@@ -108,17 +138,21 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Mobile Menu -->
         <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-slate-200">
             <div class="px-4 py-4 space-y-3">
                 <a href="#services" class="block py-2 text-slate-600 font-medium" data-i18n="nav_services">Services</a>
                 <a href="#secteurs" class="block py-2 text-slate-600 font-medium" data-i18n="nav_sectors">Sectors</a>
-                <a href="#negoce-detail" class="block py-2 text-slate-600 font-medium" data-i18n="nav_trading">Trading</a>
-                <a href="#logistique" class="block py-2 text-slate-600 font-medium" data-i18n="nav_logistics">Logistics</a>
+                <a href="#negoce-detail" class="block py-2 text-slate-600 font-medium"
+                    data-i18n="nav_trading">Trading</a>
+                <a href="#logistique" class="block py-2 text-slate-600 font-medium"
+                    data-i18n="nav_logistics">Logistics</a>
                 <a href="#processus" class="block py-2 text-slate-600 font-medium" data-i18n="nav_process">Process</a>
-                <a href="#testimonials" class="block py-2 text-slate-600 font-medium" data-i18n="nav_testimonials">Testimonials</a>
-                <button onclick="openQuoteModal()" class="w-full bg-brand-orange text-white py-3 rounded-lg font-semibold mt-4" data-i18n="nav_quote">
+                <a href="#testimonials" class="block py-2 text-slate-600 font-medium"
+                    data-i18n="nav_testimonials">Testimonials</a>
+                <button onclick="openQuoteModal()"
+                    class="w-full bg-brand-orange text-white py-3 rounded-lg font-semibold mt-4" data-i18n="nav_quote">
                     Request a Quote
                 </button>
             </div>
@@ -128,742 +162,852 @@
     <!-- Main Content -->
     <main>
 
-    <!-- Hero Section -->
-    <section class="hero-gradient pt-32 pb-20 lg:pt-40 lg:pb-32 relative overflow-hidden">
-        <!-- Background Pattern -->
-        <div class="absolute inset-0 opacity-10">
-            <div class="absolute top-20 left-10 w-72 h-72 bg-brand-orange rounded-full blur-3xl"></div>
-            <div class="absolute bottom-20 right-10 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
-        </div>
-        
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div class="text-white">
-                    <div class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-white/20">
-                        <span class="w-2 h-2 bg-brand-orange rounded-full animate-pulse"></span>
-                        <span class="text-sm font-medium" data-i18n="hero_badge">Based in Dubai, China & Africa • Global Operations</span>
-                    </div>
-                    
-                    <h1 class="text-4xl lg:text-6xl font-bold leading-tight mb-6">
-                        <span data-i18n="hero_title_1">Your Bridge To</span> 
-                        <span class="gradient-text" data-i18n="hero_title_2">The World</span>
-                    </h1>
-                    
-                    <p class="text-xl text-slate-300 mb-8 leading-relaxed max-w-lg" data-i18n="hero_desc">
-                        Comprehensive purchasing facilitation and logistics solutions. 
-                        We connect global businesses to the best suppliers worldwide.
-                    </p>
-                    
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <button onclick="openQuoteModal()" class="bg-brand-orange text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-orange-600 transition shadow-xl shadow-orange-500/30 flex items-center justify-center space-x-2">
-                            <span data-i18n="hero_btn_1">Start a Project</span>
-                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
-                        </button>
-                        <a href="#services" class="border-2 border-white/30 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white/10 transition flex items-center justify-center" data-i18n="hero_btn_2">
-                            Discover Our Services
-                        </a>
-                    </div>
-                    
-                    <!-- Trust Indicators -->
-                    <div class="mt-12 pt-8 border-t border-white/10 grid grid-cols-3 gap-8">
-                        <div>
-                            <div class="text-3xl font-bold text-brand-orange">500+</div>
-                            <div class="text-sm text-slate-400" data-i18n="hero_stat_1">Partner Suppliers</div>
-                        </div>
-                        <div>
-                            <div class="text-3xl font-bold text-brand-orange">50+</div>
-                            <div class="text-sm text-slate-400" data-i18n="hero_stat_2">Countries Served</div>
-                        </div>
-                        <div>
-                            <div class="text-3xl font-bold text-brand-orange">98%</div>
-                            <div class="text-sm text-slate-400" data-i18n="hero_stat_3">Client Satisfaction</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Hero Visual -->
-                <div class="relative h-full min-h-[400px] lg:min-h-[500px]">
-                    <img src="assets/hero_logistics.png" alt="Logistics Port" class="absolute inset-0 w-full h-full object-cover rounded-3xl shadow-2xl border-4 border-white/10">
-                    
-                    <!-- Floating Badge -->
-                    <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl p-4 shadow-2xl z-20">
-                        <div class="flex items-center space-x-3">
-                            <div class="w-12 h-12 bg-brand-orange/10 rounded-xl flex items-center justify-center">
-                                <i data-lucide="trending-down" class="w-6 h-6 text-brand-orange"></i>
-                            </div>
-                            <div>
-                                <div class="text-2xl font-bold text-brand-dark">-30%</div>
-                                <div class="text-sm text-slate-500" data-i18n="hero_badge_cost">Import Costs</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- Hero Section -->
+        <section class="hero-gradient pt-32 pb-20 lg:pt-40 lg:pb-32 relative overflow-hidden">
+            <!-- Background Pattern -->
+            <div class="absolute inset-0 opacity-10">
+                <div class="absolute top-20 left-10 w-72 h-72 bg-brand-orange rounded-full blur-3xl"></div>
+                <div class="absolute bottom-20 right-10 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
             </div>
-        </div>
-    </section>
 
-    <!-- Mission & Vision Section -->
-    <section id="about" class="py-20 bg-slate-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-brand-orange font-semibold text-sm uppercase tracking-wider" data-i18n="mission_badge">About Us</span>
-                <h2 class="text-3xl lg:text-4xl font-bold text-brand-dark mt-3 mb-4" data-i18n="mission_title">
-                    Mission, Vision & Values
-                </h2>
-                <p class="text-slate-600 text-lg hidden" data-i18n="mission_desc">
-                    Logibridge is built on strong foundations to deliver excellence across borders.
-                </p>
-            </div>
-            
-            <div class="grid lg:grid-cols-2 gap-8 mb-12">
-                <!-- Mission -->
-                <div class="bg-white rounded-3xl p-8 lg:p-10 shadow-xl border border-slate-200 card-hover">
-                    <div class="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mb-6">
-                        <i data-lucide="target" class="w-8 h-8 text-brand-dark"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-brand-dark mb-4" data-i18n="mission_card_title">Our Mission</h3>
-                    <p class="text-slate-600 leading-relaxed text-justify" data-i18n="mission_card_desc">
-                        To simplify and secure international trade by providing tailored sourcing, negotiation, and logistics solutions for businesses worldwide.
-                    </p>
-                </div>
-                
-                <!-- Vision -->
-                <div class="bg-white rounded-3xl p-8 lg:p-10 shadow-xl border border-slate-200 card-hover">
-                    <div class="w-16 h-16 bg-brand-orange/10 rounded-2xl flex items-center justify-center mb-6">
-                        <i data-lucide="eye" class="w-8 h-8 text-brand-orange"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-brand-dark mb-4" data-i18n="vision_card_title">Our Vision</h3>
-                    <p class="text-slate-600 leading-relaxed text-justify" data-i18n="vision_card_desc">
-                        To become the leading bridge connecting African markets with global opportunities through Dubai and China.
-                    </p>
-                </div>
-            </div>
-            
-            <!-- Values -->
-            <div class="bg-white rounded-3xl p-8 lg:p-12 shadow-xl border border-slate-200">
-                <div class="text-center mb-10">
-                    <div class="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                        <i data-lucide="heart" class="w-8 h-8 text-brand-dark"></i>
-                    </div>
-                    <h3 class="text-3xl font-bold text-brand-dark" data-i18n="values_card_title">Our Values</h3>
-                </div>
-                
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="space-y-3">
-                        <h4 class="text-lg font-bold text-brand-dark flex items-center">
-                            <i data-lucide="check-circle" class="w-5 h-5 text-brand-orange mr-2"></i> 
-                            <span data-i18n="val_1_title">Transparency</span>
-                        </h4>
-                        <p class="text-slate-600 text-sm leading-relaxed text-left" data-i18n="val_1_desc">...</p>
-                    </div>
-                    <div class="space-y-3">
-                        <h4 class="text-lg font-bold text-brand-dark flex items-center">
-                            <i data-lucide="check-circle" class="w-5 h-5 text-brand-orange mr-2"></i> 
-                            <span data-i18n="val_2_title">Innovation</span>
-                        </h4>
-                        <p class="text-slate-600 text-sm leading-relaxed text-left" data-i18n="val_2_desc">...</p>
-                    </div>
-                    <div class="space-y-3">
-                        <h4 class="text-lg font-bold text-brand-dark flex items-center">
-                            <i data-lucide="check-circle" class="w-5 h-5 text-brand-orange mr-2"></i> 
-                            <span data-i18n="val_3_title">Commitment to Africa</span>
-                        </h4>
-                        <p class="text-slate-600 text-sm leading-relaxed text-left" data-i18n="val_3_desc">...</p>
-                    </div>
-                    <div class="space-y-3">
-                        <h4 class="text-lg font-bold text-brand-dark flex items-center">
-                            <i data-lucide="check-circle" class="w-5 h-5 text-brand-orange mr-2"></i> 
-                            <span data-i18n="val_4_title">Reliability</span>
-                        </h4>
-                        <p class="text-slate-600 text-sm leading-relaxed text-left" data-i18n="val_4_desc">...</p>
-                    </div>
-                    <div class="space-y-3 lg:col-span-2 md:col-span-2 lg:col-start-2">
-                        <h4 class="text-lg font-bold text-brand-dark flex items-center">
-                            <i data-lucide="check-circle" class="w-5 h-5 text-brand-orange mr-2"></i> 
-                            <span data-i18n="val_5_title">Responsibility</span>
-                        </h4>
-                        <p class="text-slate-600 text-sm leading-relaxed text-left" data-i18n="val_5_desc">...</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Overview -->
-    <section id="services" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-brand-orange font-semibold text-sm uppercase tracking-wider" data-i18n="services_badge">Our Expertise</span>
-                <h2 class="text-3xl lg:text-4xl font-bold text-brand-dark mt-3 mb-4" data-i18n="services_title">
-                    Comprehensive Solutions for Your Business
-                </h2>
-                <p class="text-slate-600 text-lg" data-i18n="services_desc">
-                    From finding suppliers to final delivery, we manage every step of your international supply chain.
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Service 1: International Trading -->
-                <div class="sector-card rounded-2xl p-8 card-hover group cursor-pointer" onclick="scrollToSection('negoce-detail')">
-                    <div class="w-14 h-14 bg-brand-orange/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-orange group-hover:text-white transition-colors">
-                        <i data-lucide="briefcase" class="w-7 h-7 text-brand-orange group-hover:text-white"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-brand-dark mb-3" data-i18n="service_1_title">International Trading</h3>
-                    <p class="text-slate-600 mb-4" data-i18n="service_1_desc">
-                        Strategic connecting with commercial partners and export/import advisory.
-                    </p>
-                    <span class="text-brand-orange font-semibold text-sm flex items-center">
-                        <span data-i18n="learn_more">Learn more</span> <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
-                    </span>
-                </div>
-                
-                <!-- Service 2: Facilitation -->
-                <div class="sector-card rounded-2xl p-8 card-hover group cursor-pointer" onclick="scrollToSection('services')">
-                    <div class="w-14 h-14 bg-slate-200 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-dark group-hover:text-white transition-colors">
-                        <i data-lucide="search" class="w-7 h-7 text-brand-dark group-hover:text-white"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-brand-dark mb-3" data-i18n="service_2_title">Purchase Facilitation</h3>
-                    <p class="text-slate-600 mb-4" data-i18n="service_2_desc">
-                        Sourcing reliable suppliers, negotiating contracts, and optimizing costs.
-                    </p>
-                    <span class="text-brand-dark font-semibold text-sm flex items-center">
-                        <span data-i18n="learn_more">Learn more</span> <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
-                    </span>
-                </div>
-                
-                <!-- Service 3: Logistics -->
-                <div class="sector-card rounded-2xl p-8 card-hover group cursor-pointer" onclick="scrollToSection('logistique')">
-                    <div class="w-14 h-14 bg-slate-200 rounded-xl flex items-center justify-center mb-6 group-hover:bg-slate-600 group-hover:text-white transition-colors">
-                        <i data-lucide="globe" class="w-7 h-7 text-slate-600 group-hover:text-white"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-brand-dark mb-3" data-i18n="service_3_title">International Logistics</h3>
-                    <p class="text-slate-600 mb-4" data-i18n="service_3_desc">
-                        Sea and air freight, customs management, and real-time tracking.
-                    </p>
-                    <span class="text-slate-600 font-semibold text-sm flex items-center">
-                        <span data-i18n="learn_more">Learn more</span> <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
-                    </span>
-                </div>
-                
-                <!-- Service 4: Consulting -->
-                <div class="sector-card rounded-2xl p-8 card-hover group cursor-pointer" onclick="scrollToSection('services')">
-                    <div class="w-14 h-14 bg-slate-200 rounded-xl flex items-center justify-center mb-6 group-hover:bg-slate-500 group-hover:text-white transition-colors">
-                        <i data-lucide="clipboard-check" class="w-7 h-7 text-slate-500 group-hover:text-white"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-brand-dark mb-3" data-i18n="service_4_title">Consulting & Compliance</h3>
-                    <p class="text-slate-600 mb-4" data-i18n="service_4_desc">
-                        Regulatory expertise, customs standards, and legal support.
-                    </p>
-                    <span class="text-slate-500 font-semibold text-sm flex items-center">
-                        <span data-i18n="learn_more">Learn more</span> <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
-                    </span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- International Trading Detail -->
-    <section id="negoce-detail" class="py-20 bg-slate-50 border-t border-slate-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div class="relative h-full min-h-[400px] lg:min-h-[500px]">
-                    <img src="assets/international_deal.png" alt="International Trade Deal" class="absolute inset-0 w-full h-full object-cover rounded-3xl shadow-2xl border-4 border-white">
-                    <div class="absolute -bottom-6 -right-6 bg-brand-orange text-white rounded-2xl p-6 shadow-2xl z-20 max-w-[200px]">
-                        <i data-lucide="handshake" class="w-10 h-10 mb-3"></i>
-                        <div class="font-bold text-xl leading-tight">Win-Win Partnerships</div>
-                    </div>
-                </div>
-                
-                <div>
-                    <span class="text-brand-orange font-semibold text-sm uppercase tracking-wider" data-i18n="trading_badge">International Trading</span>
-                    <h2 class="text-3xl lg:text-4xl font-bold text-brand-dark mt-3 mb-6" data-i18n="trading_title">
-                        Mastering Global Trade Deals
-                    </h2>
-                    <p class="text-slate-600 text-lg mb-8 leading-relaxed" data-i18n="trading_desc">
-                        We negotiate on your behalf to secure the best products, at the best prices, with optimal terms. Our presence in key global hubs ensures your interests are always protected.
-                    </p>
-                    
-                    <div class="space-y-6 mb-10">
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-slate-200 rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i data-lucide="users" class="w-6 h-6 text-brand-dark"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-xl font-bold text-brand-dark mb-1" data-i18n="trading_feat_1_title">Direct Supplier Access</h4>
-                                <p class="text-slate-600" data-i18n="trading_feat_1_desc">Bypass intermediaries for factory-direct relationships.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-brand-orange/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i data-lucide="file-signature" class="w-6 h-6 text-brand-orange"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-xl font-bold text-brand-dark mb-1" data-i18n="trading_feat_2_title">Contract Negotiation</h4>
-                                <p class="text-slate-600" data-i18n="trading_feat_2_desc">Securing favorable payment terms and quality guarantees.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-slate-200 rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i data-lucide="line-chart" class="w-6 h-6 text-brand-dark"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-xl font-bold text-brand-dark mb-1" data-i18n="trading_feat_3_title">Market Intelligence</h4>
-                                <p class="text-slate-600" data-i18n="trading_feat_3_desc">Deep insights into pricing trends and product availability.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <button onclick="openQuoteModal('negoce')" class="bg-brand-dark text-white px-8 py-4 rounded-xl font-semibold hover:bg-slate-800 transition shadow-lg shadow-slate-900/30 font-sans flex items-center justify-center space-x-2">
-                        <span data-i18n="trading_btn">Discuss a Trade Project</span>
-                        <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sectors Section -->
-    <section id="secteurs" class="py-20 bg-slate-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-brand-orange font-semibold text-sm uppercase tracking-wider">Secteurs d'Activité</span>
-                <h2 class="text-3xl lg:text-4xl font-bold text-brand-dark mt-3 mb-4">
-                    Expertise Sectorielle Pointue
-                </h2>
-                <p class="text-slate-600 text-lg">
-                    Des solutions adaptées aux spécificités de chaque industrie
-                </p>
-            </div>
-            
-            <!-- Featured Sector: Construction -->
-            <div class="bg-white rounded-3xl p-8 lg:p-12 shadow-xl mb-12 border border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div class="grid lg:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <div class="inline-flex items-center space-x-2 bg-brand-orange/10 text-brand-orange px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                            <i data-lucide="star" class="w-4 h-4"></i>
-                            <span>Secteur Phare</span>
+                    <div class="text-white">
+                        <div
+                            class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-white/20">
+                            <span class="w-2 h-2 bg-brand-orange rounded-full animate-pulse"></span>
+                            <span class="text-sm font-medium" data-i18n="hero_badge">Based in Dubai, China & Africa •
+                                Global Operations</span>
                         </div>
-                        <h3 class="text-3xl font-bold text-brand-dark mb-4">Matériel de Construction</h3>
-                        <p class="text-slate-600 text-lg mb-6">
-                            Optimisez vos projets de construction avec des équipements et matériaux 
-                            de qualité internationale. Nous sourçons des machines lourdes, matériaux 
-                            de construction et équipements de sécurité auprès des meilleurs fournisseurs.
+
+                        <h1 class="text-4xl lg:text-6xl font-bold leading-tight mb-6">
+                            <span data-i18n="hero_title_1">Your Bridge To</span>
+                            <span class="gradient-text" data-i18n="hero_title_2">The World</span>
+                        </h1>
+
+                        <p class="text-xl text-slate-300 mb-8 leading-relaxed max-w-lg" data-i18n="hero_desc">
+                            Comprehensive purchasing facilitation and logistics solutions.
+                            We connect global businesses to the best suppliers worldwide.
                         </p>
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start space-x-3">
-                                <i data-lucide="check-circle" class="w-5 h-5 text-brand-orange mt-0.5 flex-shrink-0"></i>
-                                <span class="text-slate-700">Machines lourdes (pelles, bulldozers, grues)</span>
-                            </li>
-                            <li class="flex items-start space-x-3">
-                                <i data-lucide="check-circle" class="w-5 h-5 text-brand-orange mt-0.5 flex-shrink-0"></i>
-                                <span class="text-slate-700">Matériaux de construction (ciment, acier, carreaux)</span>
-                            </li>
-                            <li class="flex items-start space-x-3">
-                                <i data-lucide="check-circle" class="w-5 h-5 text-brand-orange mt-0.5 flex-shrink-0"></i>
-                                <span class="text-slate-700">Équipements de sécurité et EPI</span>
-                            </li>
-                            <li class="flex items-start space-x-3">
-                                <i data-lucide="check-circle" class="w-5 h-5 text-brand-orange mt-0.5 flex-shrink-0"></i>
-                                <span class="text-slate-700">Logistique de livraison sur chantier</span>
-                            </li>
-                        </ul>
-                        <button onclick="openSectorQuote('construction')" class="bg-brand-orange text-white px-8 py-4 rounded-xl font-semibold hover:bg-orange-600 transition shadow-lg shadow-orange-500/30">
-                            Devis Matériel Construction
+
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <button onclick="openQuoteModal()"
+                                class="bg-brand-orange text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-orange-600 transition shadow-xl shadow-orange-500/30 flex items-center justify-center space-x-2">
+                                <span data-i18n="hero_btn_1">Start a Project</span>
+                                <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                            </button>
+                            <a href="#services"
+                                class="border-2 border-white/30 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white/10 transition flex items-center justify-center"
+                                data-i18n="hero_btn_2">
+                                Discover Our Services
+                            </a>
+                        </div>
+
+                        <!-- Trust Indicators -->
+                        <div class="mt-12 pt-8 border-t border-white/10 grid grid-cols-3 gap-8">
+                            <div>
+                                <div class="text-3xl font-bold text-brand-orange">500+</div>
+                                <div class="text-sm text-slate-400" data-i18n="hero_stat_1">Partner Suppliers</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-bold text-brand-orange">50+</div>
+                                <div class="text-sm text-slate-400" data-i18n="hero_stat_2">Countries Served</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-bold text-brand-orange">98%</div>
+                                <div class="text-sm text-slate-400" data-i18n="hero_stat_3">Client Satisfaction</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hero Visual -->
+                    <div class="relative h-full min-h-[400px] lg:min-h-[500px]">
+                        <img src="assets/hero_logistics.png" alt="Logistics Port"
+                            class="absolute inset-0 w-full h-full object-cover rounded-3xl shadow-2xl border-4 border-white/10">
+
+                        <!-- Floating Badge -->
+                        <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl p-4 shadow-2xl z-20">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-12 h-12 bg-brand-orange/10 rounded-xl flex items-center justify-center">
+                                    <i data-lucide="trending-down" class="w-6 h-6 text-brand-orange"></i>
+                                </div>
+                                <div>
+                                    <div class="text-2xl font-bold text-brand-dark">-30%</div>
+                                    <div class="text-sm text-slate-500" data-i18n="hero_badge_cost">Import Costs</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Vision Section -->
+        <section id="about" class="py-20 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-brand-orange font-semibold text-sm uppercase tracking-wider"
+                        data-i18n="mission_badge">About Us</span>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-brand-dark mt-3 mb-4" data-i18n="mission_title">
+                        Mission, Vision & Values
+                    </h2>
+                    <p class="text-slate-600 text-lg hidden" data-i18n="mission_desc">
+                        Logibridge is built on strong foundations to deliver excellence across borders.
+                    </p>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-8 mb-12">
+                    <!-- Mission -->
+                    <div class="bg-white rounded-3xl p-8 lg:p-10 shadow-xl border border-slate-200 card-hover">
+                        <div class="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mb-6">
+                            <i data-lucide="target" class="w-8 h-8 text-brand-dark"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-brand-dark mb-4" data-i18n="mission_card_title">Our Mission
+                        </h3>
+                        <p class="text-slate-600 leading-relaxed text-justify" data-i18n="mission_card_desc">
+                            To simplify and secure international trade by providing tailored sourcing, negotiation, and
+                            logistics solutions for businesses worldwide.
+                        </p>
+                    </div>
+
+                    <!-- Vision -->
+                    <div class="bg-white rounded-3xl p-8 lg:p-10 shadow-xl border border-slate-200 card-hover">
+                        <div class="w-16 h-16 bg-brand-orange/10 rounded-2xl flex items-center justify-center mb-6">
+                            <i data-lucide="eye" class="w-8 h-8 text-brand-orange"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-brand-dark mb-4" data-i18n="vision_card_title">Our Vision
+                        </h3>
+                        <p class="text-slate-600 leading-relaxed text-justify" data-i18n="vision_card_desc">
+                            To become the leading bridge connecting African markets with global opportunities through
+                            Dubai and China.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Values -->
+                <div class="bg-white rounded-3xl p-8 lg:p-12 shadow-xl border border-slate-200">
+                    <div class="text-center mb-10">
+                        <div class="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="heart" class="w-8 h-8 text-brand-dark"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold text-brand-dark" data-i18n="values_card_title">Our Values</h3>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="space-y-3">
+                            <h4 class="text-lg font-bold text-brand-dark flex items-center">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-brand-orange mr-2"></i>
+                                <span data-i18n="val_1_title">Transparency</span>
+                            </h4>
+                            <p class="text-slate-600 text-sm leading-relaxed text-left" data-i18n="val_1_desc">...</p>
+                        </div>
+                        <div class="space-y-3">
+                            <h4 class="text-lg font-bold text-brand-dark flex items-center">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-brand-orange mr-2"></i>
+                                <span data-i18n="val_2_title">Innovation</span>
+                            </h4>
+                            <p class="text-slate-600 text-sm leading-relaxed text-left" data-i18n="val_2_desc">...</p>
+                        </div>
+                        <div class="space-y-3">
+                            <h4 class="text-lg font-bold text-brand-dark flex items-center">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-brand-orange mr-2"></i>
+                                <span data-i18n="val_3_title">Commitment to Africa</span>
+                            </h4>
+                            <p class="text-slate-600 text-sm leading-relaxed text-left" data-i18n="val_3_desc">...</p>
+                        </div>
+                        <div class="space-y-3">
+                            <h4 class="text-lg font-bold text-brand-dark flex items-center">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-brand-orange mr-2"></i>
+                                <span data-i18n="val_4_title">Reliability</span>
+                            </h4>
+                            <p class="text-slate-600 text-sm leading-relaxed text-left" data-i18n="val_4_desc">...</p>
+                        </div>
+                        <div class="space-y-3 lg:col-span-2 md:col-span-2 lg:col-start-2">
+                            <h4 class="text-lg font-bold text-brand-dark flex items-center">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-brand-orange mr-2"></i>
+                                <span data-i18n="val_5_title">Responsibility</span>
+                            </h4>
+                            <p class="text-slate-600 text-sm leading-relaxed text-left" data-i18n="val_5_desc">...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Overview -->
+        <section id="services" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-brand-orange font-semibold text-sm uppercase tracking-wider"
+                        data-i18n="services_badge">Our Expertise</span>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-brand-dark mt-3 mb-4" data-i18n="services_title">
+                        Comprehensive Solutions for Your Business
+                    </h2>
+                    <p class="text-slate-600 text-lg" data-i18n="services_desc">
+                        From finding suppliers to final delivery, we manage every step of your international supply
+                        chain.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Service 1: International Trading -->
+                    <div class="sector-card rounded-2xl p-8 card-hover group cursor-pointer"
+                        onclick="scrollToSection('negoce-detail')">
+                        <div
+                            class="w-14 h-14 bg-brand-orange/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-orange group-hover:text-white transition-colors">
+                            <i data-lucide="briefcase" class="w-7 h-7 text-brand-orange group-hover:text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-dark mb-3" data-i18n="service_1_title">International
+                            Trading</h3>
+                        <p class="text-slate-600 mb-4" data-i18n="service_1_desc">
+                            Strategic connecting with commercial partners and export/import advisory.
+                        </p>
+                        <span class="text-brand-orange font-semibold text-sm flex items-center">
+                            <span data-i18n="learn_more">Learn more</span> <i data-lucide="arrow-right"
+                                class="w-4 h-4 ml-2"></i>
+                        </span>
+                    </div>
+
+                    <!-- Service 2: Facilitation -->
+                    <div class="sector-card rounded-2xl p-8 card-hover group cursor-pointer"
+                        onclick="scrollToSection('services')">
+                        <div
+                            class="w-14 h-14 bg-slate-200 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-dark group-hover:text-white transition-colors">
+                            <i data-lucide="search" class="w-7 h-7 text-brand-dark group-hover:text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-dark mb-3" data-i18n="service_2_title">Purchase
+                            Facilitation</h3>
+                        <p class="text-slate-600 mb-4" data-i18n="service_2_desc">
+                            Sourcing reliable suppliers, negotiating contracts, and optimizing costs.
+                        </p>
+                        <span class="text-brand-dark font-semibold text-sm flex items-center">
+                            <span data-i18n="learn_more">Learn more</span> <i data-lucide="arrow-right"
+                                class="w-4 h-4 ml-2"></i>
+                        </span>
+                    </div>
+
+                    <!-- Service 3: Logistics -->
+                    <div class="sector-card rounded-2xl p-8 card-hover group cursor-pointer"
+                        onclick="scrollToSection('logistique')">
+                        <div
+                            class="w-14 h-14 bg-slate-200 rounded-xl flex items-center justify-center mb-6 group-hover:bg-slate-600 group-hover:text-white transition-colors">
+                            <i data-lucide="globe" class="w-7 h-7 text-slate-600 group-hover:text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-dark mb-3" data-i18n="service_3_title">International
+                            Logistics</h3>
+                        <p class="text-slate-600 mb-4" data-i18n="service_3_desc">
+                            Sea and air freight, customs management, and real-time tracking.
+                        </p>
+                        <span class="text-slate-600 font-semibold text-sm flex items-center">
+                            <span data-i18n="learn_more">Learn more</span> <i data-lucide="arrow-right"
+                                class="w-4 h-4 ml-2"></i>
+                        </span>
+                    </div>
+
+                    <!-- Service 4: Consulting -->
+                    <div class="sector-card rounded-2xl p-8 card-hover group cursor-pointer"
+                        onclick="scrollToSection('services')">
+                        <div
+                            class="w-14 h-14 bg-slate-200 rounded-xl flex items-center justify-center mb-6 group-hover:bg-slate-500 group-hover:text-white transition-colors">
+                            <i data-lucide="clipboard-check" class="w-7 h-7 text-slate-500 group-hover:text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-dark mb-3" data-i18n="service_4_title">Consulting &
+                            Compliance</h3>
+                        <p class="text-slate-600 mb-4" data-i18n="service_4_desc">
+                            Regulatory expertise, customs standards, and legal support.
+                        </p>
+                        <span class="text-slate-500 font-semibold text-sm flex items-center">
+                            <span data-i18n="learn_more">Learn more</span> <i data-lucide="arrow-right"
+                                class="w-4 h-4 ml-2"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- International Trading Detail -->
+        <section id="negoce-detail" class="py-20 bg-slate-50 border-t border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="relative h-full min-h-[400px] lg:min-h-[500px]">
+                        <img src="assets/international_deal.png" alt="International Trade Deal"
+                            class="absolute inset-0 w-full h-full object-cover rounded-3xl shadow-2xl border-4 border-white">
+                        <div
+                            class="absolute -bottom-6 -right-6 bg-brand-orange text-white rounded-2xl p-6 shadow-2xl z-20 max-w-[200px]">
+                            <i data-lucide="handshake" class="w-10 h-10 mb-3"></i>
+                            <div class="font-bold text-xl leading-tight">Win-Win Partnerships</div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="text-brand-orange font-semibold text-sm uppercase tracking-wider"
+                            data-i18n="trading_badge">International Trading</span>
+                        <h2 class="text-3xl lg:text-4xl font-bold text-brand-dark mt-3 mb-6" data-i18n="trading_title">
+                            Mastering Global Trade Deals
+                        </h2>
+                        <p class="text-slate-600 text-lg mb-8 leading-relaxed" data-i18n="trading_desc">
+                            We negotiate on your behalf to secure the best products, at the best prices, with optimal
+                            terms. Our presence in key global hubs ensures your interests are always protected.
+                        </p>
+
+                        <div class="space-y-6 mb-10">
+                            <div class="flex items-start space-x-4">
+                                <div
+                                    class="w-12 h-12 bg-slate-200 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="users" class="w-6 h-6 text-brand-dark"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-brand-dark mb-1" data-i18n="trading_feat_1_title">
+                                        Direct Supplier Access</h4>
+                                    <p class="text-slate-600" data-i18n="trading_feat_1_desc">Bypass intermediaries for
+                                        factory-direct relationships.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div
+                                    class="w-12 h-12 bg-brand-orange/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="file-signature" class="w-6 h-6 text-brand-orange"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-brand-dark mb-1" data-i18n="trading_feat_2_title">
+                                        Contract Negotiation</h4>
+                                    <p class="text-slate-600" data-i18n="trading_feat_2_desc">Securing favorable payment
+                                        terms and quality guarantees.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div
+                                    class="w-12 h-12 bg-slate-200 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="line-chart" class="w-6 h-6 text-brand-dark"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-brand-dark mb-1" data-i18n="trading_feat_3_title">
+                                        Market Intelligence</h4>
+                                    <p class="text-slate-600" data-i18n="trading_feat_3_desc">Deep insights into pricing
+                                        trends and product availability.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button onclick="openQuoteModal('negoce')"
+                            class="bg-brand-dark text-white px-8 py-4 rounded-xl font-semibold hover:bg-slate-800 transition shadow-lg shadow-slate-900/30 font-sans flex items-center justify-center space-x-2">
+                            <span data-i18n="trading_btn">Discuss a Trade Project</span>
+                            <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
                         </button>
                     </div>
-                    <div class="relative h-full min-h-[400px]">
-                        <img src="assets/construction_machinery.png" alt="Construction Equipment" class="absolute inset-0 w-full h-full object-cover rounded-3xl shadow-2xl">
-                    </div>
                 </div>
             </div>
-            
-            <!-- Other Sectors Grid -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Automotive -->
-                <div class="bg-white rounded-2xl p-6 shadow-md border border-slate-200 card-hover cursor-pointer" onclick="openSectorQuote('automobile')">
-                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
-                        <i data-lucide="car" class="w-6 h-6 text-blue-600"></i>
-                    </div>
-                    <h4 class="text-lg font-bold text-brand-dark mb-2">Automobile</h4>
-                    <p class="text-slate-600 text-sm mb-4">Véhicules, pièces détachées et équipements de garage</p>
-                    <span class="text-brand-orange text-sm font-medium">Demander devis →</span>
-                </div>
-                
-                <!-- IT -->
-                <div class="bg-white rounded-2xl p-6 shadow-md border border-slate-200 card-hover cursor-pointer" onclick="openSectorQuote('informatique')">
-                    <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
-                        <i data-lucide="monitor" class="w-6 h-6 text-purple-600"></i>
-                    </div>
-                    <h4 class="text-lg font-bold text-brand-dark mb-2">Informatique</h4>
-                    <p class="text-slate-600 text-sm mb-4">Matériel informatique, serveurs et solutions logicielles</p>
-                    <span class="text-brand-orange text-sm font-medium">Demander devis →</span>
-                </div>
-                
-                <!-- Electronics -->
-                <div class="bg-white rounded-2xl p-6 shadow-md border border-slate-200 card-hover cursor-pointer" onclick="openSectorQuote('electronique')">
-                    <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-4">
-                        <i data-lucide="cpu" class="w-6 h-6 text-emerald-600"></i>
-                    </div>
-                    <h4 class="text-lg font-bold text-brand-dark mb-2">Électronique</h4>
-                    <p class="text-slate-600 text-sm mb-4">Composants électroniques, IoT et technologies avancées</p>
-                    <span class="text-brand-orange text-sm font-medium">Demander devis →</span>
-                </div>
-                
-                <!-- Industrial -->
-                <div class="bg-white rounded-2xl p-6 shadow-md border border-slate-200 card-hover cursor-pointer" onclick="openSectorQuote('industriel')">
-                    <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center mb-4">
-                        <i data-lucide="factory" class="w-6 h-6 text-amber-600"></i>
-                    </div>
-                    <h4 class="text-lg font-bold text-brand-dark mb-2">Industriel</h4>
-                    <p class="text-slate-600 text-sm mb-4">Machinerie industrielle, maintenance et fournitures</p>
-                    <span class="text-brand-orange text-sm font-medium">Demander devis →</span>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Logistics Comparison Section -->
-    <section id="logistique" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-12">
-                <span class="text-brand-orange font-semibold text-sm uppercase tracking-wider">Solutions Logistiques</span>
-                <h2 class="text-3xl lg:text-4xl font-bold text-brand-dark mt-3 mb-4">
-                    Transport Aérien vs Maritime
-                </h2>
-                <p class="text-slate-600 text-lg">
-                    Choisissez la solution adaptée à vos besoins
-                </p>
-            </div>
-            
-            <!-- Toggle -->
-            <div class="flex justify-center mb-12">
-                <div class="bg-slate-100 p-1 rounded-xl inline-flex">
-                    <button onclick="switchLogistics('air')" id="btn-air" class="comparison-toggle active px-6 py-3 rounded-lg font-semibold text-sm transition flex items-center space-x-2">
-                        <i data-lucide="plane" class="w-4 h-4"></i>
-                        <span>Transport Aérien</span>
-                    </button>
-                    <button onclick="switchLogistics('sea')" id="btn-sea" class="comparison-toggle px-6 py-3 rounded-lg font-semibold text-sm transition flex items-center space-x-2 text-slate-600">
-                        <i data-lucide="ship" class="w-4 h-4"></i>
-                        <span>Transport Maritime</span>
-                    </button>
-                </div>
-            </div>
-            
-            <!-- Air Content -->
-            <div id="content-air" class="grid lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h3 class="text-2xl font-bold text-brand-dark mb-4">Transport Aérien Express</h3>
-                    <p class="text-slate-600 mb-6">
-                        Pour un transport rapide, sécurisé et flexible de vos marchandises. 
-                        Idéal pour les envois urgents, de petite taille ou de grande valeur.
+        <!-- Sectors Section -->
+        <section id="secteurs" class="py-20 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-brand-orange font-semibold text-sm uppercase tracking-wider">Secteurs
+                        d'Activité</span>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-brand-dark mt-3 mb-4">
+                        Expertise Sectorielle Pointue
+                    </h2>
+                    <p class="text-slate-600 text-lg">
+                        Des solutions adaptées aux spécificités de chaque industrie
                     </p>
-                    
-                    <div class="space-y-4 mb-8">
-                        <div class="flex items-start space-x-4">
-                            <div class="w-10 h-10 bg-brand-orange/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <i data-lucide="zap" class="w-5 h-5 text-brand-orange"></i>
+                </div>
+
+                <!-- Featured Sector: Construction -->
+                <div class="bg-white rounded-3xl p-8 lg:p-12 shadow-xl mb-12 border border-slate-200">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <div
+                                class="inline-flex items-center space-x-2 bg-brand-orange/10 text-brand-orange px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                                <i data-lucide="star" class="w-4 h-4"></i>
+                                <span>Secteur Phare</span>
                             </div>
-                            <div>
-                                <h4 class="font-semibold text-brand-dark">Rapidité</h4>
-                                <p class="text-slate-600 text-sm">Transit de 2 à 7 jours selon la destination</p>
-                            </div>
+                            <h3 class="text-3xl font-bold text-brand-dark mb-4">Matériel de Construction</h3>
+                            <p class="text-slate-600 text-lg mb-6">
+                                Optimisez vos projets de construction avec des équipements et matériaux
+                                de qualité internationale. Nous sourçons des machines lourdes, matériaux
+                                de construction et équipements de sécurité auprès des meilleurs fournisseurs.
+                            </p>
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-start space-x-3">
+                                    <i data-lucide="check-circle"
+                                        class="w-5 h-5 text-brand-orange mt-0.5 flex-shrink-0"></i>
+                                    <span class="text-slate-700">Machines lourdes (pelles, bulldozers, grues)</span>
+                                </li>
+                                <li class="flex items-start space-x-3">
+                                    <i data-lucide="check-circle"
+                                        class="w-5 h-5 text-brand-orange mt-0.5 flex-shrink-0"></i>
+                                    <span class="text-slate-700">Matériaux de construction (ciment, acier,
+                                        carreaux)</span>
+                                </li>
+                                <li class="flex items-start space-x-3">
+                                    <i data-lucide="check-circle"
+                                        class="w-5 h-5 text-brand-orange mt-0.5 flex-shrink-0"></i>
+                                    <span class="text-slate-700">Équipements de sécurité et EPI</span>
+                                </li>
+                                <li class="flex items-start space-x-3">
+                                    <i data-lucide="check-circle"
+                                        class="w-5 h-5 text-brand-orange mt-0.5 flex-shrink-0"></i>
+                                    <span class="text-slate-700">Logistique de livraison sur chantier</span>
+                                </li>
+                            </ul>
+                            <button onclick="openSectorQuote('construction')"
+                                class="bg-brand-orange text-white px-8 py-4 rounded-xl font-semibold hover:bg-orange-600 transition shadow-lg shadow-orange-500/30">
+                                Devis Matériel Construction
+                            </button>
                         </div>
-                        <div class="flex items-start space-x-4">
-                            <div class="w-10 h-10 bg-brand-orange/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <i data-lucide="shield" class="w-5 h-5 text-brand-orange"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-brand-dark">Sécurité Maximale</h4>
-                                <p class="text-slate-600 text-sm">Suivi constant et gestion des risques</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <div class="w-10 h-10 bg-brand-orange/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <i data-lucide="file-text" class="w-5 h-5 text-brand-orange"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-brand-dark">Gestion Douanière</h4>
-                                <p class="text-slate-600 text-sm">Nous gérons toute la documentation</p>
-                            </div>
+                        <div class="relative h-full min-h-[400px]">
+                            <img src="assets/construction_machinery.png" alt="Construction Equipment"
+                                class="absolute inset-0 w-full h-full object-cover rounded-3xl shadow-2xl">
                         </div>
                     </div>
-                    
-                    <button onclick="openQuoteModal('air')" class="bg-brand-orange text-white px-8 py-4 rounded-xl font-semibold hover:bg-orange-600 transition shadow-lg shadow-orange-500/30">
-                        Devis Transport Aérien
-                    </button>
                 </div>
-                <div class="relative rounded-3xl overflow-hidden shadow-2xl group h-full min-h-[400px]">
-                    <img src="assets/air_freight.png" alt="Air Freight" class="w-full h-full object-cover absolute inset-0 transition-transform duration-700 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
-                    <div class="relative z-10 p-8 h-full flex flex-col justify-end">
-                        <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 text-white shadow-xl">
-                            <div class="flex items-center justify-between mb-4">
-                                <div class="flex items-center space-x-3">
-                                    <i data-lucide="plane" class="w-6 h-6 text-brand-orange"></i>
-                                    <div class="font-bold text-xl">Air Freight</div>
+
+                <!-- Other Sectors Grid -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Automotive -->
+                    <div class="bg-white rounded-2xl p-6 shadow-md border border-slate-200 card-hover cursor-pointer"
+                        onclick="openSectorQuote('automobile')">
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+                            <i data-lucide="car" class="w-6 h-6 text-blue-600"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-brand-dark mb-2">Automobile</h4>
+                        <p class="text-slate-600 text-sm mb-4">Véhicules, pièces détachées et équipements de garage</p>
+                        <span class="text-brand-orange text-sm font-medium">Demander devis →</span>
+                    </div>
+
+                    <!-- IT -->
+                    <div class="bg-white rounded-2xl p-6 shadow-md border border-slate-200 card-hover cursor-pointer"
+                        onclick="openSectorQuote('informatique')">
+                        <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
+                            <i data-lucide="monitor" class="w-6 h-6 text-purple-600"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-brand-dark mb-2">Informatique</h4>
+                        <p class="text-slate-600 text-sm mb-4">Matériel informatique, serveurs et solutions logicielles
+                        </p>
+                        <span class="text-brand-orange text-sm font-medium">Demander devis →</span>
+                    </div>
+
+                    <!-- Electronics -->
+                    <div class="bg-white rounded-2xl p-6 shadow-md border border-slate-200 card-hover cursor-pointer"
+                        onclick="openSectorQuote('electronique')">
+                        <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-4">
+                            <i data-lucide="cpu" class="w-6 h-6 text-emerald-600"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-brand-dark mb-2">Électronique</h4>
+                        <p class="text-slate-600 text-sm mb-4">Composants électroniques, IoT et technologies avancées
+                        </p>
+                        <span class="text-brand-orange text-sm font-medium">Demander devis →</span>
+                    </div>
+
+                    <!-- Industrial -->
+                    <div class="bg-white rounded-2xl p-6 shadow-md border border-slate-200 card-hover cursor-pointer"
+                        onclick="openSectorQuote('industriel')">
+                        <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center mb-4">
+                            <i data-lucide="factory" class="w-6 h-6 text-amber-600"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-brand-dark mb-2">Industriel</h4>
+                        <p class="text-slate-600 text-sm mb-4">Machinerie industrielle, maintenance et fournitures</p>
+                        <span class="text-brand-orange text-sm font-medium">Demander devis →</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Logistics Comparison Section -->
+        <section id="logistique" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <span class="text-brand-orange font-semibold text-sm uppercase tracking-wider">Solutions
+                        Logistiques</span>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-brand-dark mt-3 mb-4">
+                        Transport Aérien vs Maritime
+                    </h2>
+                    <p class="text-slate-600 text-lg">
+                        Choisissez la solution adaptée à vos besoins
+                    </p>
+                </div>
+
+                <!-- Toggle -->
+                <div class="flex justify-center mb-12">
+                    <div class="bg-slate-100 p-1 rounded-xl inline-flex">
+                        <button onclick="switchLogistics('air')" id="btn-air"
+                            class="comparison-toggle active px-6 py-3 rounded-lg font-semibold text-sm transition flex items-center space-x-2">
+                            <i data-lucide="plane" class="w-4 h-4"></i>
+                            <span>Transport Aérien</span>
+                        </button>
+                        <button onclick="switchLogistics('sea')" id="btn-sea"
+                            class="comparison-toggle px-6 py-3 rounded-lg font-semibold text-sm transition flex items-center space-x-2 text-slate-600">
+                            <i data-lucide="ship" class="w-4 h-4"></i>
+                            <span>Transport Maritime</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Air Content -->
+                <div id="content-air" class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold text-brand-dark mb-4">Transport Aérien Express</h3>
+                        <p class="text-slate-600 mb-6">
+                            Pour un transport rapide, sécurisé et flexible de vos marchandises.
+                            Idéal pour les envois urgents, de petite taille ou de grande valeur.
+                        </p>
+
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-start space-x-4">
+                                <div
+                                    class="w-10 h-10 bg-brand-orange/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="zap" class="w-5 h-5 text-brand-orange"></i>
                                 </div>
-                                <span class="bg-brand-orange text-white px-3 py-1 rounded-full text-sm font-semibold">2-7 jours</span>
+                                <div>
+                                    <h4 class="font-semibold text-brand-dark">Rapidité</h4>
+                                    <p class="text-slate-600 text-sm">Transit de 2 à 7 jours selon la destination</p>
+                                </div>
                             </div>
-                            <div class="space-y-2 text-sm text-white/90">
-                                <div class="flex justify-between border-b border-white/20 pb-2"><span>Idéal pour</span> <span class="font-medium">Urgent / Haute Valeur</span></div>
-                                <div class="flex justify-between border-b border-white/20 pb-2"><span>Capacité</span> <span class="font-medium">Petits volumes</span></div>
-                                <div class="flex justify-between border-b border-white/20 pb-2"><span>Coût</span> <span class="font-medium">Premium</span></div>
-                                <div class="flex justify-between"><span>Suivi</span> <span class="font-medium">Temps réel</span></div>
+                            <div class="flex items-start space-x-4">
+                                <div
+                                    class="w-10 h-10 bg-brand-orange/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="shield" class="w-5 h-5 text-brand-orange"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-brand-dark">Sécurité Maximale</h4>
+                                    <p class="text-slate-600 text-sm">Suivi constant et gestion des risques</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div
+                                    class="w-10 h-10 bg-brand-orange/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="file-text" class="w-5 h-5 text-brand-orange"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-brand-dark">Gestion Douanière</h4>
+                                    <p class="text-slate-600 text-sm">Nous gérons toute la documentation</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button onclick="openQuoteModal('air')"
+                            class="bg-brand-orange text-white px-8 py-4 rounded-xl font-semibold hover:bg-orange-600 transition shadow-lg shadow-orange-500/30">
+                            Devis Transport Aérien
+                        </button>
+                    </div>
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl group h-full min-h-[400px]">
+                        <img src="assets/air_freight.png" alt="Air Freight"
+                            class="w-full h-full object-cover absolute inset-0 transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                        <div class="relative z-10 p-8 h-full flex flex-col justify-end">
+                            <div
+                                class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 text-white shadow-xl">
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex items-center space-x-3">
+                                        <i data-lucide="plane" class="w-6 h-6 text-brand-orange"></i>
+                                        <div class="font-bold text-xl">Air Freight</div>
+                                    </div>
+                                    <span
+                                        class="bg-brand-orange text-white px-3 py-1 rounded-full text-sm font-semibold">2-7
+                                        jours</span>
+                                </div>
+                                <div class="space-y-2 text-sm text-white/90">
+                                    <div class="flex justify-between border-b border-white/20 pb-2"><span>Idéal
+                                            pour</span> <span class="font-medium">Urgent / Haute Valeur</span></div>
+                                    <div class="flex justify-between border-b border-white/20 pb-2">
+                                        <span>Capacité</span> <span class="font-medium">Petits volumes</span>
+                                    </div>
+                                    <div class="flex justify-between border-b border-white/20 pb-2"><span>Coût</span>
+                                        <span class="font-medium">Premium</span>
+                                    </div>
+                                    <div class="flex justify-between"><span>Suivi</span> <span class="font-medium">Temps
+                                            réel</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sea Content (Hidden by default) -->
+                <div id="content-sea" class="grid lg:grid-cols-2 gap-12 items-center hidden">
+                    <div>
+                        <h3 class="text-2xl font-bold text-brand-dark mb-4">Transport Maritime</h3>
+                        <p class="text-slate-600 mb-6">
+                            Solution idéale pour les envois volumineux, lourds ou en grande quantité.
+                            Offre flexibilité accrue et coûts compétitifs pour vos importations massives.
+                        </p>
+
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-start space-x-4">
+                                <div
+                                    class="w-10 h-10 bg-blue-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="dollar-sign" class="w-5 h-5 text-blue-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-brand-dark">Rentabilité</h4>
+                                    <p class="text-slate-600 text-sm">Coût optimal pour grandes quantités</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div
+                                    class="w-10 h-10 bg-blue-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="box" class="w-5 h-5 text-blue-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-brand-dark">Grande Capacité</h4>
+                                    <p class="text-slate-600 text-sm">Conteneurs 20'/40' et marchandises hors gabarit
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div
+                                    class="w-10 h-10 bg-blue-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="leaf" class="w-5 h-5 text-blue-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-brand-dark">Écologique</h4>
+                                    <p class="text-slate-600 text-sm">Faible empreinte carbone par tonne transportée</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button onclick="openQuoteModal('sea')"
+                            class="bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 transition shadow-lg shadow-blue-500/30">
+                            Devis Transport Maritime
+                        </button>
+                    </div>
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl group h-full min-h-[400px]">
+                        <img src="assets/sea_freight.png" alt="Sea Freight"
+                            class="w-full h-full object-cover absolute inset-0 transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                        <div class="relative z-10 p-8 h-full flex flex-col justify-end">
+                            <div
+                                class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 text-white shadow-xl">
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex items-center space-x-3">
+                                        <i data-lucide="ship" class="w-6 h-6 text-blue-400"></i>
+                                        <div class="font-bold text-xl">Sea Freight</div>
+                                    </div>
+                                    <span
+                                        class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">15-45
+                                        jours</span>
+                                </div>
+                                <div class="space-y-2 text-sm text-white/90">
+                                    <div class="flex justify-between border-b border-white/20 pb-2"><span>Idéal
+                                            pour</span> <span class="font-medium">Volumineux / Lourd</span></div>
+                                    <div class="flex justify-between border-b border-white/20 pb-2">
+                                        <span>Capacité</span> <span class="font-medium">Illimitée</span>
+                                    </div>
+                                    <div class="flex justify-between border-b border-white/20 pb-2"><span>Coût</span>
+                                        <span class="font-medium">Économique</span>
+                                    </div>
+                                    <div class="flex justify-between"><span>Suivi</span> <span class="font-medium">Par
+                                            étapes</span></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <!-- Sea Content (Hidden by default) -->
-            <div id="content-sea" class="grid lg:grid-cols-2 gap-12 items-center hidden">
-                <div>
-                    <h3 class="text-2xl font-bold text-brand-dark mb-4">Transport Maritime</h3>
-                    <p class="text-slate-600 mb-6">
-                        Solution idéale pour les envois volumineux, lourds ou en grande quantité. 
-                        Offre flexibilité accrue et coûts compétitifs pour vos importations massives.
+        </section>
+
+        <!-- Process Section -->
+        <section id="processus" class="py-20 bg-slate-900 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-brand-orange font-semibold text-sm uppercase tracking-wider"
+                        data-i18n="proc_badge">Our Process</span>
+                    <h2 class="text-3xl lg:text-4xl font-bold mt-3 mb-4" data-i18n="proc_title">
+                        From Idea to Delivery
+                    </h2>
+                    <p class="text-slate-400 text-lg" data-i18n="proc_desc">
+                        A proven process to guarantee your satisfaction at every step
                     </p>
-                    
-                    <div class="space-y-4 mb-8">
-                        <div class="flex items-start space-x-4">
-                            <div class="w-10 h-10 bg-blue-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <i data-lucide="dollar-sign" class="w-5 h-5 text-blue-500"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-brand-dark">Rentabilité</h4>
-                                <p class="text-slate-600 text-sm">Coût optimal pour grandes quantités</p>
-                            </div>
+                </div>
+
+                <div class="grid md:grid-cols-4 gap-8 relative">
+                    <!-- Connecting Line (desktop only) -->
+                    <div class="hidden md:block absolute top-1/2 left-0 right-0 h-1 process-line -translate-y-1/2 z-0">
+                    </div>
+
+                    <!-- Step 1 -->
+                    <div class="relative z-10 text-center">
+                        <div
+                            class="w-20 h-20 bg-brand-orange rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-2xl shadow-orange-500/50">
+                            <i data-lucide="search" class="w-10 h-10 text-white"></i>
                         </div>
-                        <div class="flex items-start space-x-4">
-                            <div class="w-10 h-10 bg-blue-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <i data-lucide="box" class="w-5 h-5 text-blue-500"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-brand-dark">Grande Capacité</h4>
-                                <p class="text-slate-600 text-sm">Conteneurs 20'/40' et marchandises hors gabarit</p>
-                            </div>
+                        <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700">
+                            <div class="text-brand-orange font-bold text-lg mb-2">01</div>
+                            <h3 class="text-xl font-bold mb-3" data-i18n="proc_1_title">Sourcing</h3>
+                            <p class="text-slate-400 text-sm" data-i18n="proc_1_desc">
+                                Identification and verification of the best suppliers matching your needs.
+                            </p>
                         </div>
-                        <div class="flex items-start space-x-4">
-                            <div class="w-10 h-10 bg-blue-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <i data-lucide="leaf" class="w-5 h-5 text-blue-500"></i>
-                            </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="relative z-10 text-center">
+                        <div
+                            class="w-20 h-20 bg-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-2xl shadow-blue-500/50">
+                            <i data-lucide="handshake" class="w-10 h-10 text-white"></i>
+                        </div>
+                        <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700">
+                            <div class="text-blue-400 font-bold text-lg mb-2">02</div>
+                            <h3 class="text-xl font-bold mb-3" data-i18n="proc_2_title">Negotiation</h3>
+                            <p class="text-slate-400 text-sm" data-i18n="proc_2_desc">
+                                Obtaining the best pricing conditions and secure contracting.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="relative z-10 text-center">
+                        <div
+                            class="w-20 h-20 bg-emerald-500 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-2xl shadow-emerald-500/50">
+                            <i data-lucide="ship" class="w-10 h-10 text-white"></i>
+                        </div>
+                        <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700">
+                            <div class="text-emerald-400 font-bold text-lg mb-2">03</div>
+                            <h3 class="text-xl font-bold mb-3" data-i18n="proc_3_title">Logistics</h3>
+                            <p class="text-slate-400 text-sm" data-i18n="proc_3_desc">
+                                Transport organization, customs management, and real-time tracking.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="relative z-10 text-center">
+                        <div
+                            class="w-20 h-20 bg-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-2xl shadow-purple-500/50">
+                            <i data-lucide="package-check" class="w-10 h-10 text-white"></i>
+                        </div>
+                        <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700">
+                            <div class="text-purple-400 font-bold text-lg mb-2">04</div>
+                            <h3 class="text-xl font-bold mb-3" data-i18n="proc_4_title">Delivery</h3>
+                            <p class="text-slate-400 text-sm" data-i18n="proc_4_desc">
+                                Final reception, quality control, and post-delivery support.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-20 bg-slate-50 border-b border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-brand-orange font-semibold text-sm uppercase tracking-wider"
+                        data-i18n="testi_badge">Testimonials</span>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-brand-dark mt-3 mb-4" data-i18n="testi_title">
+                        What Our Clients Say
+                    </h2>
+                    <p class="text-slate-600 text-lg" data-i18n="testi_desc">
+                        Discover why businesses trust us for their international trade and logistics needs.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-slate-200 relative">
+                        <i data-lucide="quote" class="w-10 h-10 text-brand-orange/20 absolute top-6 right-6"></i>
+                        <div class="flex items-center space-x-1 mb-6 text-brand-orange">
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        </div>
+                        <p class="text-slate-600 mb-6 italic" data-i18n="testi_1_text">
+                            "Logibridge has completely transformed our supply chain. Their team secured high-quality
+                            construction materials at incredible rates from China, and the delivery was seamless."
+                        </p>
+                        <div class="flex items-center space-x-4">
+                            <div
+                                class="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center font-bold text-brand-dark">
+                                A</div>
                             <div>
-                                <h4 class="font-semibold text-brand-dark">Écologique</h4>
-                                <p class="text-slate-600 text-sm">Faible empreinte carbone par tonne transportée</p>
+                                <h4 class="font-bold text-brand-dark" data-i18n="testi_1_name">Amadou D.</h4>
+                                <p class="text-sm text-slate-500" data-i18n="testi_1_role">Construction Manager</p>
                             </div>
                         </div>
                     </div>
-                    
-                    <button onclick="openQuoteModal('sea')" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 transition shadow-lg shadow-blue-500/30">
-                        Devis Transport Maritime
+
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-slate-200 relative">
+                        <i data-lucide="quote" class="w-10 h-10 text-brand-orange/20 absolute top-6 right-6"></i>
+                        <div class="flex items-center space-x-1 mb-6 text-brand-orange">
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        </div>
+                        <p class="text-slate-600 mb-6 italic" data-i18n="testi_2_text">
+                            "The transparency and reliability of Logibridge are unmatched. They handled our automotive
+                            imports from Dubai to West Africa with utmost professionalism."
+                        </p>
+                        <div class="flex items-center space-x-4">
+                            <div
+                                class="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center font-bold text-brand-dark">
+                                S</div>
+                            <div>
+                                <h4 class="font-bold text-brand-dark" data-i18n="testi_2_name">Sarah K.</h4>
+                                <p class="text-sm text-slate-500" data-i18n="testi_2_role">Automobile Dealership Owner
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-slate-200 relative">
+                        <i data-lucide="quote" class="w-10 h-10 text-brand-orange/20 absolute top-6 right-6"></i>
+                        <div class="flex items-center space-x-1 mb-6 text-brand-orange">
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        </div>
+                        <p class="text-slate-600 mb-6 italic" data-i18n="testi_3_text">
+                            "If you need a trustworthy partner for international trade, Logibridge is the right choice.
+                            Their market intelligence helped us save a lot on our IT procurement."
+                        </p>
+                        <div class="flex items-center space-x-4">
+                            <div
+                                class="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center font-bold text-brand-dark">
+                                M</div>
+                            <div>
+                                <h4 class="font-bold text-brand-dark" data-i18n="testi_3_name">Marc T.</h4>
+                                <p class="text-sm text-slate-500" data-i18n="testi_3_role">IT Solutions Director</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 bg-brand-orange">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl lg:text-5xl font-bold text-white mb-6" data-i18n="cta_title">
+                    Ready to Internationalize Your Business?
+                </h2>
+                <p class="text-xl text-white/90 mb-10 max-w-3xl mx-auto" data-i18n="cta_desc">
+                    Let's discuss your importation projects and find the most suitable solutions for your needs.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button onclick="openQuoteModal()"
+                        class="bg-white text-brand-orange px-10 py-5 rounded-xl font-bold text-lg hover:bg-slate-100 transition shadow-xl"
+                        data-i18n="cta_btn_1">
+                        Request a Free Quote
+                    </button>
+                    <button onclick="handleSmartCall()"
+                        class="border-2 border-white text-white px-10 py-5 rounded-xl font-bold text-lg hover:bg-white/10 transition flex items-center justify-center space-x-2">
+                        <i data-lucide="phone" class="w-5 h-5"></i>
+                        <span data-i18n="cta_btn_2">Call Us</span>
                     </button>
                 </div>
-                <div class="relative rounded-3xl overflow-hidden shadow-2xl group h-full min-h-[400px]">
-                    <img src="assets/sea_freight.png" alt="Sea Freight" class="w-full h-full object-cover absolute inset-0 transition-transform duration-700 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
-                    <div class="relative z-10 p-8 h-full flex flex-col justify-end">
-                        <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 text-white shadow-xl">
-                            <div class="flex items-center justify-between mb-4">
-                                <div class="flex items-center space-x-3">
-                                    <i data-lucide="ship" class="w-6 h-6 text-blue-400"></i>
-                                    <div class="font-bold text-xl">Sea Freight</div>
-                                </div>
-                                <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">15-45 jours</span>
-                            </div>
-                            <div class="space-y-2 text-sm text-white/90">
-                                <div class="flex justify-between border-b border-white/20 pb-2"><span>Idéal pour</span> <span class="font-medium">Volumineux / Lourd</span></div>
-                                <div class="flex justify-between border-b border-white/20 pb-2"><span>Capacité</span> <span class="font-medium">Illimitée</span></div>
-                                <div class="flex justify-between border-b border-white/20 pb-2"><span>Coût</span> <span class="font-medium">Économique</span></div>
-                                <div class="flex justify-between"><span>Suivi</span> <span class="font-medium">Par étapes</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Process Section -->
-    <section id="processus" class="py-20 bg-slate-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-brand-orange font-semibold text-sm uppercase tracking-wider" data-i18n="proc_badge">Our Process</span>
-                <h2 class="text-3xl lg:text-4xl font-bold mt-3 mb-4" data-i18n="proc_title">
-                    From Idea to Delivery
-                </h2>
-                <p class="text-slate-400 text-lg" data-i18n="proc_desc">
-                    A proven process to guarantee your satisfaction at every step
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-4 gap-8 relative">
-                <!-- Connecting Line (desktop only) -->
-                <div class="hidden md:block absolute top-1/2 left-0 right-0 h-1 process-line -translate-y-1/2 z-0"></div>
-                
-                <!-- Step 1 -->
-                <div class="relative z-10 text-center">
-                    <div class="w-20 h-20 bg-brand-orange rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-2xl shadow-orange-500/50">
-                        <i data-lucide="search" class="w-10 h-10 text-white"></i>
-                    </div>
-                    <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700">
-                        <div class="text-brand-orange font-bold text-lg mb-2">01</div>
-                        <h3 class="text-xl font-bold mb-3" data-i18n="proc_1_title">Sourcing</h3>
-                        <p class="text-slate-400 text-sm" data-i18n="proc_1_desc">
-                            Identification and verification of the best suppliers matching your needs.
-                        </p>
-                    </div>
-                </div>
-                
-                <!-- Step 2 -->
-                <div class="relative z-10 text-center">
-                    <div class="w-20 h-20 bg-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-2xl shadow-blue-500/50">
-                        <i data-lucide="handshake" class="w-10 h-10 text-white"></i>
-                    </div>
-                    <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700">
-                        <div class="text-blue-400 font-bold text-lg mb-2">02</div>
-                        <h3 class="text-xl font-bold mb-3" data-i18n="proc_2_title">Negotiation</h3>
-                        <p class="text-slate-400 text-sm" data-i18n="proc_2_desc">
-                            Obtaining the best pricing conditions and secure contracting.
-                        </p>
-                    </div>
-                </div>
-                
-                <!-- Step 3 -->
-                <div class="relative z-10 text-center">
-                    <div class="w-20 h-20 bg-emerald-500 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-2xl shadow-emerald-500/50">
-                        <i data-lucide="ship" class="w-10 h-10 text-white"></i>
-                    </div>
-                    <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700">
-                        <div class="text-emerald-400 font-bold text-lg mb-2">03</div>
-                        <h3 class="text-xl font-bold mb-3" data-i18n="proc_3_title">Logistics</h3>
-                        <p class="text-slate-400 text-sm" data-i18n="proc_3_desc">
-                            Transport organization, customs management, and real-time tracking.
-                        </p>
-                    </div>
-                </div>
-                
-                <!-- Step 4 -->
-                <div class="relative z-10 text-center">
-                    <div class="w-20 h-20 bg-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-2xl shadow-purple-500/50">
-                        <i data-lucide="package-check" class="w-10 h-10 text-white"></i>
-                    </div>
-                    <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700">
-                        <div class="text-purple-400 font-bold text-lg mb-2">04</div>
-                        <h3 class="text-xl font-bold mb-3" data-i18n="proc_4_title">Delivery</h3>
-                        <p class="text-slate-400 text-sm" data-i18n="proc_4_desc">
-                            Final reception, quality control, and post-delivery support.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="py-20 bg-slate-50 border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-brand-orange font-semibold text-sm uppercase tracking-wider" data-i18n="testi_badge">Testimonials</span>
-                <h2 class="text-3xl lg:text-4xl font-bold text-brand-dark mt-3 mb-4" data-i18n="testi_title">
-                    What Our Clients Say
-                </h2>
-                <p class="text-slate-600 text-lg" data-i18n="testi_desc">
-                    Discover why businesses trust us for their international trade and logistics needs.
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Testimonial 1 -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg border border-slate-200 relative">
-                    <i data-lucide="quote" class="w-10 h-10 text-brand-orange/20 absolute top-6 right-6"></i>
-                    <div class="flex items-center space-x-1 mb-6 text-brand-orange">
-                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                    </div>
-                    <p class="text-slate-600 mb-6 italic" data-i18n="testi_1_text">
-                        "Logibridge has completely transformed our supply chain. Their team secured high-quality construction materials at incredible rates from China, and the delivery was seamless."
-                    </p>
-                    <div class="flex items-center space-x-4">
-                        <div class="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center font-bold text-brand-dark">A</div>
-                        <div>
-                            <h4 class="font-bold text-brand-dark" data-i18n="testi_1_name">Amadou D.</h4>
-                            <p class="text-sm text-slate-500" data-i18n="testi_1_role">Construction Manager</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Testimonial 2 -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg border border-slate-200 relative">
-                    <i data-lucide="quote" class="w-10 h-10 text-brand-orange/20 absolute top-6 right-6"></i>
-                    <div class="flex items-center space-x-1 mb-6 text-brand-orange">
-                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                    </div>
-                    <p class="text-slate-600 mb-6 italic" data-i18n="testi_2_text">
-                        "The transparency and reliability of Logibridge are unmatched. They handled our automotive imports from Dubai to West Africa with utmost professionalism."
-                    </p>
-                    <div class="flex items-center space-x-4">
-                        <div class="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center font-bold text-brand-dark">S</div>
-                        <div>
-                            <h4 class="font-bold text-brand-dark" data-i18n="testi_2_name">Sarah K.</h4>
-                            <p class="text-sm text-slate-500" data-i18n="testi_2_role">Automobile Dealership Owner</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Testimonial 3 -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg border border-slate-200 relative">
-                    <i data-lucide="quote" class="w-10 h-10 text-brand-orange/20 absolute top-6 right-6"></i>
-                    <div class="flex items-center space-x-1 mb-6 text-brand-orange">
-                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                    </div>
-                    <p class="text-slate-600 mb-6 italic" data-i18n="testi_3_text">
-                        "If you need a trustworthy partner for international trade, Logibridge is the right choice. Their market intelligence helped us save a lot on our IT procurement."
-                    </p>
-                    <div class="flex items-center space-x-4">
-                        <div class="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center font-bold text-brand-dark">M</div>
-                        <div>
-                            <h4 class="font-bold text-brand-dark" data-i18n="testi_3_name">Marc T.</h4>
-                            <p class="text-sm text-slate-500" data-i18n="testi_3_role">IT Solutions Director</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="py-20 bg-brand-orange">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl lg:text-5xl font-bold text-white mb-6" data-i18n="cta_title">
-                Ready to Internationalize Your Business?
-            </h2>
-            <p class="text-xl text-white/90 mb-10 max-w-3xl mx-auto" data-i18n="cta_desc">
-                Let's discuss your importation projects and find the most suitable solutions for your needs.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <button onclick="openQuoteModal()" class="bg-white text-brand-orange px-10 py-5 rounded-xl font-bold text-lg hover:bg-slate-100 transition shadow-xl" data-i18n="cta_btn_1">
-                    Request a Free Quote
-                </button>
-                <button onclick="handleSmartCall()" class="border-2 border-white text-white px-10 py-5 rounded-xl font-bold text-lg hover:bg-white/10 transition flex items-center justify-center space-x-2">
-                    <i data-lucide="phone" class="w-5 h-5"></i>
-                    <span data-i18n="cta_btn_2">Call Us</span>
-                </button>
-            </div>
-        </div>
-    </section>
+        </section>
 
     </main>
 
@@ -877,45 +1021,67 @@
                         <img src="assets/logo1.png" alt="Logibridge Logo" class="h-8 w-auto">
                     </div>
                     <p class="text-slate-400 mb-6" data-i18n="foot_desc">
-                        Your trusted partner for purchase facilitation and international logistics across Dubai, China, and Africa.
+                        Your trusted partner for purchase facilitation and international logistics across Dubai, China,
+                        and Africa.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-brand-orange transition">
-                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        <a href="https://www.tiktok.com/@logibridge.services?is_from_webapp=1&sender_device=pc"
+                            target="_blank" rel="noopener noreferrer"
+                            class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-brand-orange transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-5 h-5">
+                                <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+                            </svg>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-brand-orange transition">
-                            <i data-lucide="facebook" class="w-5 h-5"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-brand-orange transition">
-                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                        <a href="https://www.instagram.com/logibridge_services" target="_blank"
+                            rel="noopener noreferrer"
+                            class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-brand-orange transition text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                            </svg>
                         </a>
                     </div>
                 </div>
-                
+
                 <!-- Services -->
                 <div>
                     <h4 class="text-white font-bold mb-6" data-i18n="foot_services">Services</h4>
                     <ul class="space-y-3">
-                        <li><a href="#" class="hover:text-brand-orange transition" data-i18n="foot_s1">Purchase Facilitation</a></li>
-                        <li><a href="#" class="hover:text-brand-orange transition" data-i18n="foot_s2">Air Freight</a></li>
-                        <li><a href="#" class="hover:text-brand-orange transition" data-i18n="foot_s3">Sea Freight</a></li>
-                        <li><a href="#" class="hover:text-brand-orange transition" data-i18n="foot_s4">International Trading</a></li>
-                        <li><a href="#" class="hover:text-brand-orange transition" data-i18n="foot_s5">Import/Export Consulting</a></li>
+                        <li><a href="#" class="hover:text-brand-orange transition" data-i18n="foot_s1">Purchase
+                                Facilitation</a></li>
+                        <li><a href="#" class="hover:text-brand-orange transition" data-i18n="foot_s2">Air Freight</a>
+                        </li>
+                        <li><a href="#" class="hover:text-brand-orange transition" data-i18n="foot_s3">Sea Freight</a>
+                        </li>
+                        <li><a href="#" class="hover:text-brand-orange transition" data-i18n="foot_s4">International
+                                Trading</a></li>
+                        <li><a href="#" class="hover:text-brand-orange transition" data-i18n="foot_s5">Import/Export
+                                Consulting</a></li>
                     </ul>
                 </div>
-                
+
                 <!-- Sectors -->
                 <div>
                     <h4 class="text-white font-bold mb-6" data-i18n="foot_sect">Sectors</h4>
                     <ul class="space-y-3">
-                        <li><a href="#" class="hover:text-brand-orange transition" data-i18n="foot_sect1">Construction</a></li>
-                        <li><a href="#" class="hover:text-brand-orange transition" data-i18n="foot_sect2">Automotive</a></li>
-                        <li><a href="#" class="hover:text-brand-orange transition" data-i18n="foot_sect3">Information Technology</a></li>
-                        <li><a href="#" class="hover:text-brand-orange transition" data-i18n="foot_sect4">Electronics</a></li>
-                        <li><a href="#" class="hover:text-brand-orange transition" data-i18n="foot_sect5">Industrial</a></li>
+                        <li><a href="#" class="hover:text-brand-orange transition"
+                                data-i18n="foot_sect1">Construction</a></li>
+                        <li><a href="#" class="hover:text-brand-orange transition" data-i18n="foot_sect2">Automotive</a>
+                        </li>
+                        <li><a href="#" class="hover:text-brand-orange transition" data-i18n="foot_sect3">Information
+                                Technology</a></li>
+                        <li><a href="#" class="hover:text-brand-orange transition"
+                                data-i18n="foot_sect4">Electronics</a></li>
+                        <li><a href="#" class="hover:text-brand-orange transition" data-i18n="foot_sect5">Industrial</a>
+                        </li>
                     </ul>
                 </div>
-                
+
                 <!-- Contact -->
                 <div>
                     <h4 class="text-white font-bold mb-6" data-i18n="foot_contact">Contact</h4>
@@ -938,7 +1104,8 @@
                     </ul>
                 </div>
             </div>
-            
+
+                    <!-- Copyright & Legal -->
             <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center">
                 <p class="text-slate-500 text-sm" data-i18n="foot_rights">
                     © 2024 Logibridge International. All rights reserved.
@@ -949,7 +1116,21 @@
                     <a href="admin.html" class="text-slate-500 hover:text-brand-orange text-sm transition" data-i18n="foot_admin">Admin</a>
                 </div>
             </div>
+            
+            <!-- Developer Credit -->
+            <div class="border-t border-slate-800/50 mt-6 pt-6 text-center">
+                <p class="text-slate-600 text-sm flex items-center justify-center space-x-2">
+                    <span>Designed & Developed by</span>
+                    <a href="https://github.com/Khanetmoi" target="_blank" rel="noopener noreferrer" class="text-brand-orange hover:text-orange-400 transition font-medium flex items-center space-x-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        <span>Myriad Evo</span>
+                    </a>
+                </p>
+            </div>
         </div>
+    
     </footer>
 
     <!-- Quote Modal -->
@@ -960,16 +1141,19 @@
                     <h3 class="text-2xl font-bold text-brand-dark" data-i18n="modal_quote_title">Request a Quote</h3>
                     <p class="text-slate-500" data-i18n="modal_quote_desc">Fill out the form below</p>
                 </div>
-                <button onclick="closeQuoteModal()" class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center hover:bg-slate-200 transition">
+                <button onclick="closeQuoteModal()"
+                    class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center hover:bg-slate-200 transition">
                     <i data-lucide="x" class="w-5 h-5 text-slate-600"></i>
                 </button>
             </div>
-            
+
             <form id="quoteForm" class="p-6 space-y-6">
                 <!-- Sector Selection -->
                 <div>
-                    <label class="block text-sm font-semibold text-brand-dark mb-2" data-i18n="modal_sector_label">Business Sector *</label>
-                    <select id="sector" name="sector" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20 outline-none transition">
+                    <label class="block text-sm font-semibold text-brand-dark mb-2"
+                        data-i18n="modal_sector_label">Business Sector *</label>
+                    <select id="sector" name="sector" required
+                        class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20 outline-none transition">
                         <option value="" data-i18n="modal_sector_opt_default">Select a sector</option>
                         <option value="construction" data-i18n="foot_sect1">Construction</option>
                         <option value="automobile" data-i18n="foot_sect2">Automotive</option>
@@ -979,63 +1163,89 @@
                         <option value="autre" data-i18n="modal_sector_opt_other">Other</option>
                     </select>
                 </div>
-                
+
                 <!-- Service Type -->
                 <div>
-                    <label class="block text-sm font-semibold text-brand-dark mb-2" data-i18n="modal_service_label">Service Type *</label>
+                    <label class="block text-sm font-semibold text-brand-dark mb-2"
+                        data-i18n="modal_service_label">Service Type *</label>
                     <div class="grid grid-cols-2 gap-4">
-                        <label class="flex items-center space-x-3 p-4 border border-slate-200 rounded-xl cursor-pointer hover:border-brand-orange transition">
-                            <input type="radio" name="serviceType" value="achat" required class="w-4 h-4 text-brand-orange">
+                        <label
+                            class="flex items-center space-x-3 p-4 border border-slate-200 rounded-xl cursor-pointer hover:border-brand-orange transition">
+                            <input type="radio" name="serviceType" value="achat" required
+                                class="w-4 h-4 text-brand-orange">
                             <span data-i18n="foot_s1">Purchase Facilitation</span>
                         </label>
-                        <label class="flex items-center space-x-3 p-4 border border-slate-200 rounded-xl cursor-pointer hover:border-brand-orange transition">
-                            <input type="radio" name="serviceType" value="logistics" required class="w-4 h-4 text-brand-orange">
+                        <label
+                            class="flex items-center space-x-3 p-4 border border-slate-200 rounded-xl cursor-pointer hover:border-brand-orange transition">
+                            <input type="radio" name="serviceType" value="logistics" required
+                                class="w-4 h-4 text-brand-orange">
                             <span data-i18n="nav_logistics">Logistics</span>
                         </label>
-                        <label class="flex items-center space-x-3 p-4 border border-slate-200 rounded-xl cursor-pointer hover:border-brand-orange transition">
-                            <input type="radio" name="serviceType" value="negoce" required class="w-4 h-4 text-brand-orange">
+                        <label
+                            class="flex items-center space-x-3 p-4 border border-slate-200 rounded-xl cursor-pointer hover:border-brand-orange transition">
+                            <input type="radio" name="serviceType" value="negoce" required
+                                class="w-4 h-4 text-brand-orange">
                             <span data-i18n="nav_trading">Trading</span>
                         </label>
-                        <label class="flex items-center space-x-3 p-4 border border-slate-200 rounded-xl cursor-pointer hover:border-brand-orange transition">
-                            <input type="radio" name="serviceType" value="conseil" required class="w-4 h-4 text-brand-orange">
+                        <label
+                            class="flex items-center space-x-3 p-4 border border-slate-200 rounded-xl cursor-pointer hover:border-brand-orange transition">
+                            <input type="radio" name="serviceType" value="conseil" required
+                                class="w-4 h-4 text-brand-orange">
                             <span data-i18n="foot_s5">Consulting</span>
                         </label>
                     </div>
                 </div>
-                
+
                 <!-- Contact Info -->
                 <div class="grid md:grid-cols-2 gap-6">
                     <div>
-                        <label class="block text-sm font-semibold text-brand-dark mb-2" data-i18n="modal_name_label">Full Name *</label>
-                        <input type="text" id="fullName" name="fullName" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20 outline-none transition" placeholder="..." data-i18n-placeholder="modal_name_placeholder">
+                        <label class="block text-sm font-semibold text-brand-dark mb-2"
+                            data-i18n="modal_name_label">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" required
+                            class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20 outline-none transition"
+                            placeholder="..." data-i18n-placeholder="modal_name_placeholder">
                     </div>
                     <div>
-                        <label class="block text-sm font-semibold text-brand-dark mb-2" data-i18n="modal_company_label">Company</label>
-                        <input type="text" id="company" name="company" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20 outline-none transition" placeholder="..." data-i18n-placeholder="modal_company_placeholder">
+                        <label class="block text-sm font-semibold text-brand-dark mb-2"
+                            data-i18n="modal_company_label">Company</label>
+                        <input type="text" id="company" name="company"
+                            class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20 outline-none transition"
+                            placeholder="..." data-i18n-placeholder="modal_company_placeholder">
                     </div>
                 </div>
-                
+
                 <div class="grid md:grid-cols-2 gap-6">
                     <div>
-                        <label class="block text-sm font-semibold text-brand-dark mb-2" data-i18n="modal_email_label">Email *</label>
-                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20 outline-none transition" placeholder="you@email.com">
+                        <label class="block text-sm font-semibold text-brand-dark mb-2"
+                            data-i18n="modal_email_label">Email *</label>
+                        <input type="email" id="email" name="email" required
+                            class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20 outline-none transition"
+                            placeholder="you@email.com">
                     </div>
                     <div>
-                        <label class="block text-sm font-semibold text-brand-dark mb-2" data-i18n="modal_phone_label">Phone *</label>
-                        <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20 outline-none transition" placeholder="+971 XXX XXX XXX">
+                        <label class="block text-sm font-semibold text-brand-dark mb-2"
+                            data-i18n="modal_phone_label">Phone *</label>
+                        <input type="tel" id="phone" name="phone" required
+                            class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20 outline-none transition"
+                            placeholder="+971 XXX XXX XXX">
                     </div>
                 </div>
-                
+
                 <!-- Project Details -->
                 <div>
-                    <label class="block text-sm font-semibold text-brand-dark mb-2" data-i18n="modal_desc_label">Project Description *</label>
-                    <textarea id="projectDetails" name="projectDetails" required rows="4" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20 outline-none transition" placeholder="..." data-i18n-placeholder="modal_desc_placeholder"></textarea>
+                    <label class="block text-sm font-semibold text-brand-dark mb-2" data-i18n="modal_desc_label">Project
+                        Description *</label>
+                    <textarea id="projectDetails" name="projectDetails" required rows="4"
+                        class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20 outline-none transition"
+                        placeholder="..." data-i18n-placeholder="modal_desc_placeholder"></textarea>
                 </div>
-                
+
                 <!-- Budget (optional) -->
                 <div>
-                    <label class="block text-sm font-semibold text-brand-dark mb-2" data-i18n="modal_budget_label">Estimated Budget (optional)</label>
-                    <select id="budget" name="budget" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20 outline-none transition">
+                    <label class="block text-sm font-semibold text-brand-dark mb-2"
+                        data-i18n="modal_budget_label">Estimated Budget (optional)</label>
+                    <select id="budget" name="budget"
+                        class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20 outline-none transition">
                         <option value="" data-i18n="modal_budget_opt_default">Select a range</option>
                         <option value="10-50k">10,000 $ - 50,000 $</option>
                         <option value="50-100k">50,000 $ - 100,000 $</option>
@@ -1043,8 +1253,9 @@
                         <option value="500k+">500,000+ $</option>
                     </select>
                 </div>
-                
-                <button type="submit" id="submitBtn" class="w-full bg-brand-orange text-white py-4 rounded-xl font-bold text-lg hover:bg-orange-600 transition shadow-lg shadow-orange-500/30 flex items-center justify-center space-x-2">
+
+                <button type="submit" id="submitBtn"
+                    class="w-full bg-brand-orange text-white py-4 rounded-xl font-bold text-lg hover:bg-orange-600 transition shadow-lg shadow-orange-500/30 flex items-center justify-center space-x-2">
                     <span data-i18n="modal_submit">Send my request</span>
                     <i data-lucide="send" class="w-5 h-5"></i>
                 </button>
@@ -1057,29 +1268,43 @@
         <div class="bg-white rounded-2xl w-full max-w-md mx-4 shadow-2xl">
             <div class="p-6 border-b border-slate-200 flex justify-between items-center">
                 <h3 class="text-xl font-bold text-brand-dark" data-i18n="modal_contact_title">Contact Options</h3>
-                <button onclick="closeContactOptionsModal()" class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center hover:bg-slate-200 transition">
+                <button onclick="closeContactOptionsModal()"
+                    class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center hover:bg-slate-200 transition">
                     <i data-lucide="x" class="w-5 h-5 text-slate-600"></i>
                 </button>
             </div>
             <div class="p-6 space-y-4">
-                <p class="text-slate-600 text-sm mb-4" data-i18n="modal_contact_desc">We couldn't detect a local number for your region. Please connect with us via WhatsApp or our social channels:</p>
-                
-                <a href="https://wa.me/971528064643" target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center space-x-3 p-4 bg-green-500 hover:bg-green-600 text-white rounded-xl transition font-bold shadow-lg shadow-green-500/30">
+                <p class="text-slate-600 text-sm mb-4" data-i18n="modal_contact_desc">We couldn't detect a local number
+                    for your region. Please connect with us via WhatsApp or our social channels:</p>
+
+                <a href="https://wa.me/971528064643" target="_blank" rel="noopener noreferrer"
+                    class="w-full flex items-center justify-center space-x-3 p-4 bg-green-500 hover:bg-green-600 text-white rounded-xl transition font-bold shadow-lg shadow-green-500/30">
                     <i data-lucide="message-circle" class="w-6 h-6 text-white"></i>
                     <span>WhatsApp</span>
                 </a>
-                
-                <div class="grid grid-cols-3 gap-4 pt-4 border-t border-slate-100">
-                    <a href="javascript:void(0)" class="flex flex-col items-center p-3 rounded-xl bg-slate-50 hover:bg-slate-100 transition text-brand-dark cursor-pointer">
-                        <i data-lucide="linkedin" class="w-6 h-6 mb-2"></i>
-                        <span class="text-xs font-semibold">LinkedIn</span>
+
+                <div class="grid grid-cols-2 gap-4 pt-4 border-t border-slate-100">
+                    <!-- TikTok -->
+                    <a href="https://www.tiktok.com/@logibridge.services?is_from_webapp=1&sender_device=pc"
+                        target="_blank" rel="noopener noreferrer"
+                        class="flex flex-col items-center p-3 rounded-xl bg-slate-50 hover:bg-slate-100 transition text-brand-dark cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="currentColor" class="w-6 h-6 mb-2">
+                            <path
+                                d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
+                        </svg>
+                        <span class="text-xs font-semibold">TikTok</span>
                     </a>
-                    <a href="javascript:void(0)" class="flex flex-col items-center p-3 rounded-xl bg-slate-50 hover:bg-slate-100 transition text-brand-dark cursor-pointer">
-                        <i data-lucide="facebook" class="w-6 h-6 mb-2"></i>
-                        <span class="text-xs font-semibold">Facebook</span>
-                    </a>
-                    <a href="javascript:void(0)" class="flex flex-col items-center p-3 rounded-xl bg-slate-50 hover:bg-slate-100 transition text-brand-dark cursor-pointer">
-                        <i data-lucide="instagram" class="w-6 h-6 mb-2"></i>
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/logibridge_services" target="_blank" rel="noopener noreferrer"
+                        class="flex flex-col items-center p-3 rounded-xl bg-slate-50 hover:bg-slate-100 transition text-brand-dark cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="w-6 h-6 mb-2">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                        </svg>
                         <span class="text-xs font-semibold">Instagram</span>
                     </a>
                 </div>
@@ -1097,9 +1322,10 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Firebase Configuration -->
     <script src="js/firebase.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
